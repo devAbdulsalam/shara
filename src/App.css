@@ -1,38 +1,46 @@
-.App {
-  text-align: center;
+.bg {
+  background-color: #407BFF;
+  background-image: linear-gradient(to right top, #b7d3fc, #a5e4fd, #acf2f0, #cafade, #f2ffd4);
+  /* background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg stroke='%23000' stroke-width='66.7' stroke-opacity='0.05' %3E%3Ccircle fill='%232299FF' cx='0' cy='0' r='1800'/%3E%3Ccircle fill='%232197fb' cx='0' cy='0' r='1700'/%3E%3Ccircle fill='%232195f8' cx='0' cy='0' r='1600'/%3E%3Ccircle fill='%232092f4' cx='0' cy='0' r='1500'/%3E%3Ccircle fill='%232090f0' cx='0' cy='0' r='1400'/%3E%3Ccircle fill='%231f8eec' cx='0' cy='0' r='1300'/%3E%3Ccircle fill='%231f8ce9' cx='0' cy='0' r='1200'/%3E%3Ccircle fill='%231e8ae5' cx='0' cy='0' r='1100'/%3E%3Ccircle fill='%231e87e1' cx='0' cy='0' r='1000'/%3E%3Ccircle fill='%231d85de' cx='0' cy='0' r='900'/%3E%3Ccircle fill='%231d83da' cx='0' cy='0' r='800'/%3E%3Ccircle fill='%231c81d7' cx='0' cy='0' r='700'/%3E%3Ccircle fill='%231c7fd3' cx='0' cy='0' r='600'/%3E%3Ccircle fill='%231c7dcf' cx='0' cy='0' r='500'/%3E%3Ccircle fill='%231b7acc' cx='0' cy='0' r='400'/%3E%3Ccircle fill='%231b78c8' cx='0' cy='0' r='300'/%3E%3Ccircle fill='%231a76c5' cx='0' cy='0' r='200'/%3E%3Ccircle fill='%231A74C1' cx='0' cy='0' r='100'/%3E%3C/g%3E%3C/svg%3E"); */
+  background-attachment: fixed;
+  background-size: cover;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.card {
+  @apply bg-white text-blue-500 py-10 px-20 rounded-lg text-center text-xl font-bold border-2 hover:bg-transparent transition-all hover:text-white hover:border-white border-white;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.items {
+  @apply text-3xl hover:text-4xl transition-all text-[#407BFF] block md:flex flex-col justify-center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.item-bar {
+  @apply shadow-lg my-3 flex flex-col w-full bg-gray-200 mt-4;
 }
 
-.App-link {
-  color: #61dafb;
+.button {
+  @apply py-3 w-full md:py-5 md:px-20 text-white font-semibold rounded-md bg-[#407BFF] my-3 block;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+a {
+  text-decoration: none;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 20px 4px 10px #f3eee7;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2a22c5;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #fff;
 }

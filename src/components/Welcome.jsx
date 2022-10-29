@@ -1,11 +1,42 @@
-import React from 'react'
+import React from "react";
+import TestiImage3 from "../assets/Inbox cleanup-rafiki.svg";
+import {Link} from "react-router-dom"
+
 
 const Welcome = () => {
   return (
-    <div>
-      
+    <div class="font-serif">
+      <header class="fixed w-full">
+        <nav class=" border-gray-200 py-2.5">
+          <div class="flex flex-wrap items-center justify-between max-w-screen-xl px-4 mx-auto"></div>
+        </nav>
+      </header>
+      <section class="p-10 py-10">
+        <div class="grid max-w-screen-xl px-4 pt-20 mx-auto lg:gap-8 xl:gap-0 lg:py-10 lg:grid-cols-12 lg:pt-28">
+          <div class="lg:mt-0 lg:col-span-5 lg:flex">
+            <img src={TestiImage3} alt="hero image" />
+          </div>
+          <div class="mr-auto place-self-center lg:col-span-7 md:text-left text-center">
+            <h1 class="max-w-2xl mb-4 text-4xl font-extrabold leading-none tracking-tight md:text-5xl text-[#407BFF] xl:text-6xl dark:text-[#407BFF]">
+              A Clean and Wealth City for All 
+            </h1>
+            <p class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat,
+              maxime.
+            </p>
+            <div class="space-y-4 sm:flex md:justify-start justify-center sm:space-y-0 sm:space-x-4 py-3">
+              <Link
+                to='/home'
+                class="button bg-white px-10 py-2 rounded-lg text-blue-500 font-semibold"
+              >
+                GET STARTED
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
-  )
-}
+  );
+};
 
-export default Welcome
+export default Welcome;

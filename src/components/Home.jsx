@@ -9,7 +9,7 @@ const Home = () => {
         <nav class="border-gray-200 py-2.5">
         <div class="flex flex-wrap items-center justify-between max-w-screen-xl px-4 mx-auto">
             <div class="flex items-center justify-center w-full h-5">
-			  <h1>Helpies</h1>
+			  <h1>Clean City</h1>
 			</div>
         </div>
       </nav>

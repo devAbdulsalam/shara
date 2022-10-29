@@ -1,5 +1,6 @@
 // import TestiImage3 from './assets/testimonials/testimonial-3.webp';
 
+
 // // Wastes
 export const plasticWRate = 12
 export const metalWRate = 15

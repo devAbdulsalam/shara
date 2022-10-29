@@ -81,14 +81,14 @@ const calculateTotal = () => {
                                 <p className='text-xl ml-3'>EARN {Number(organicWaste) * organicWRate}</p>
                             </div>
                         </div>
-                        <div className='text-green-500'>
+                        <div className='text-yellow-500'>
                             <div className='flex text-xl gap-2 my-2 items-center'>
                                 <h2 className='font-semibold'>General Waste</h2>
                                 <span className=''>1KG = {generalWRate}$</span>
                             </div>
                             <div className='flex gap-2 my-2 items-center'>
                                 <input type="number" id="" 
-                                    className="px-3 py-1.5 text-lg font-normal text-green-500 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                                    className="px-3 py-1.5 text-lg font-normal text-yellow-500 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
                                     value={generalWaste} 
                                     onChange={(e) => setGeneralWaste(e.target.value)}
                                     onKeyUp={calculateTotal} 

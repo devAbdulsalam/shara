@@ -14,7 +14,7 @@ const WasteInfo = () => {
         <div className="flex bg-white rounded-lg shadow-lg overflow-hidden mx-auto max-w-sm lg:max-w-4xl">
             <div className="hidden lg:block lg:w-1/2 bg-cover" style={{backgroundImage: `url('https://images.unsplash.com/photo-1546514714-df0ccc50d7bf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=667&q=80')`}}></div>              <div className="w-full p-4 my-5 lg:w-1/2">
                  <div className="">
-                    <h2 className="text-2xl font-semibold text-gray-700 text-center p">What is your report?</h2>
+                    <h2 className="text-2xl font-semibold text-gray-700 text-center p">What is your Waste?</h2>
                     <p className="text-sm text-gray-600 text-center">you can select mutiple options;</p> 
                  </div>
                 <div className="py-3">
@@ -22,7 +22,7 @@ const WasteInfo = () => {
                           <input type="checkbox" id="feature1"/>
                           <div className="flex-1 overflow-hidden">
                             <h5 className="text-sm font-semibold text-gray-600 dark:text-light">
-                              Robbery
+                              Metal Waste
                             </h5>
                           </div>
                         </article>
@@ -31,7 +31,7 @@ const WasteInfo = () => {
                           <input type="checkbox" id="feature2"/>
                           <div>
                             <h5 className="text-sm font-semibold text-gray-600 dark:text-light">
-                                Kidnapping
+                                Plastic Waste
                               </h5>
                           </div>
                         </article>
@@ -40,7 +40,7 @@ const WasteInfo = () => {
                           <input type="checkbox" id="feature3"/>
                           <div>
                             <h5 className="text-sm font-semibold text-gray-600 dark:text-light">
-                                Murder
+                                General Waste
                               </h5>
                           </div>
                         </article>
@@ -49,7 +49,7 @@ const WasteInfo = () => {
                             <input type="checkbox" id="feature2"/>
                             <div>
                                 <h5 className="text-sm font-semibold text-gray-600 dark:text-light">
-                                    Fight
+                                    Organic Waste
                                   </h5>
                             </div>
                           </article>

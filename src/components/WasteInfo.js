@@ -58,14 +58,6 @@ const WasteInfo = () => {
                             <input type="checkbox" id="feature3"/>
                             <div>
                                 <h5 className="text-sm font-semibold text-gray-600 dark:text-light">
-                                    Domestic Violence
-                                  </h5>
-                            </div>
-                          </article>
-                          <article className="feature3">
-                            <input type="checkbox" id="feature3"/>
-                            <div>
-                                <h5 className="text-sm font-semibold text-gray-600 dark:text-light">
                                     Other
                                   </h5>
                             </div>

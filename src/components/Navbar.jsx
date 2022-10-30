@@ -13,7 +13,7 @@ const Navbar = () => {
   ];
   return (
     <nav
-      className={`w-full left-0 top-0 z-[999] bg-gray-900  text-white}`}>
+      className={`w-full left-0 top-0 z-[999] absolute bg-gray-100 shadow-lg text-white}`}>
       <div className="flex items-center justify-between">
         <div onClick={() => setOpen(!open)} className={`z-[999] ${open ? "text-gray-900" : "text-gray-100"} cursor-pointer text-3xl  m-5`}>
           <svg

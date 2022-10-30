@@ -16,7 +16,7 @@ const WasteInfo = () => {
                     <div className="py-3">
                     
                             <article className="w-full p-1 cursor-pointer border-gray-500 group hover:bg-gray-700 my-2 border-2 rounded-2xl">
-                                <div className="flex justify-center duration-500 w-full" data-bs-toggle="modal"	data-bs-target="#Modal2">
+                                <div className="flex justify-center duration-500 w-full">
                                     <h5 className="text-xl m-3 font-semibold text-gray-600 group-hover:text-white dark:text-light">
                                         Metal Waste
                                     </h5>

@@ -26,8 +26,6 @@ const WasteInfo = () => {
               <article className="w-full p-1 cursor-pointer border-gray-500 group hover:bg-gray-700 my-2 border-2 rounded-2xl">
                 <div
                   className="flex justify-center duration-500 w-full"
-                  data-bs-toggle="modal"
-                  data-bs-target="#Modal2"
                 >
                   <h5 className="text-xl m-3 font-semibold text-gray-600 group-hover:text-white dark:text-light">
                     Metal Waste
@@ -75,14 +73,6 @@ const WasteInfo = () => {
                         data-bs-dismiss="modal"
                       >
                         Cancle
-                      </button>
-                      <button
-                        type="button"
-                        data-bs-toggle="modal"
-                        data-bs-target="#Modal3"
-                        class="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out ml-1"
-                      >
-                        Send
                       </button>
                     </div>
                   </div>

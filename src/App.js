@@ -1,6 +1,6 @@
 import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { Amount, Dashboard, Despose, DesposeSent, Login, Location, Signin, Notification, WasteInfo, Wallet, Profile, Welcome, Home, GreenChat } from './components';
+import { Amount, Dashboard, Despose, DesposeSent, Login, Location, Signin, Notification, WasteInfo, Wallet, Profile, Welcome, Home,GreenChat } from './components/Index';
 
 
 function App() {

@@ -1,13 +1,14 @@
 import React from "react";
-import UserImg from "../assets/pngwing.com (59).png";
+// import UserImg from "../assets/pngwing.com (59).png";
 import RecycleBin from "../assets/pngwing.com (76).png";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
+import Navbar from "./Navbar";
 
 const Dashboard = () => {
   return (
     <div>
-      <div class="h-36 bg-transparent rounded-b-[30%] px-7">
+      {/* <div class="h-36 bg-transparent rounded-b-[30%] px-7">
         <div class="flex items-center py-5 mb-5 justify-between">
           <div onclick="toggle()" class="toggleBtn cursor-pointer">
             <svg
@@ -24,20 +25,23 @@ const Dashboard = () => {
             </svg>
           </div>
           <img src={UserImg} alt="" class="w-14 h-14 rounded-full" />
-        </div>
-        <Splide className="my -3 p-3 bg-white" aria-label="My Favorite Images">
+        </div> */}
+
+      <Navbar />
+      <div class="z-[50] h-36 bg-transparent rounded-b-[30%] px-7">
+        <Splide className="my-3 p-3 bg-white" aria-label="myimges">
           <SplideSlide>
-            <img src={RecycleBin} alt="Image 1" />
+            <img src={RecycleBin} alt="Img1" />
           </SplideSlide>
           <SplideSlide>
-            <img src={RecycleBin} alt="Image 2" />
+            <img src={RecycleBin} alt="Img2" />
           </SplideSlide>
         </Splide>
       </div>
-      <div class="mt-32 md:mx-32 mx-5 py-5">
+      <div class="mt-20 md:mx-32 mx-5 py-5">
         <div class="grid grid-cols-2 gap-x-4 gap-y-6">
-          <a href="./report.html">
-            <div class="bg-[#16a34a] rounded-lg text-white p-2 space-y-5 shadow-xl">
+          <a href="./wasteinfo">
+            <div className="bg-[#407BFF] rounded-lg text-white p-2 space-y-5 shadow-xl">
               <div class="">
                 <svg
                   width="35"

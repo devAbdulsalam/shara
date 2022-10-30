@@ -17,7 +17,7 @@ const Home = () => {
       <section class="p-5 py-10 w-full">
         <div class="grid max-w-screen-xl px-4 pt-12 mx-auto lg:gap-8 xl:gap-0 lg:py-10 lg:grid-cols-12 lg:pt-14">
           <div class="lg:mt-0 lg:col-span-5 lg:flex">
-            <img src={TestiImage4} alt="hero image" />
+            <img src={TestiImage4} alt="hero" />
           </div>
           <div class="mr-auto place-self-center lg:col-span-7 md:text-left text-center">
             <Link
@@ -75,8 +75,7 @@ const Home = () => {
         </div>
       </section>
     </div>
-  )
-}
+  );
+};
 
 export default Home;
-

@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
 const Signup = () => {
-  const [email, setEmail] = useState("");
-  const [name, setName] = useState("");
-  const [password, setPassword] = useState("");
-  const navigate = useNavigate();
+  const [email, setEmail] = useState('');
+  // const [name, setName] = useState('');
+  const [password, setPassword] = useState('');
+  const navigate = useNavigate()
   const { user, signUp } = useState();
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -16,7 +16,7 @@ const Signup = () => {
       console.log(error);
     }
   };
-
+console.log(user)
   return (
     <>
       <div className="w-full h-screen">
@@ -35,6 +35,7 @@ const Signup = () => {
                 className="w-full flex flex-col py-4"
               >
                 <input
+                  value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   className="p-3 my-2 bg-gray-700 rouded"
                   type="email"
@@ -42,6 +43,7 @@ const Signup = () => {
                   autoComplete="email"
                 />
                 <input
+                  value={password}
                   onChange={(e) => setPassword(e.target.value)}
                   className="p-3 my-2 bg-gray-700 rouded"
                   type="password"

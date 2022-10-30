@@ -13,7 +13,7 @@ const Welcome = () => {
       <section class="p-3">
         <div class="grid max-w-screen-xl px-4 pt-20 mx-3 lg:gap-8 xl:gap-0 lg:py-10 lg:grid-cols-12 lg:pt-28">
           <div class="lg:mt-0 lg:col-span-5 lg:flex">
-            <img src={TestiImage3} alt="hero image" />
+            <img src={TestiImage3} alt="hero" />
           </div>
           <div class="mr-auto place-self-center lg:col-span-7 md:text-left text-center">
             <h1 class="max-w-2xl mb-4 text-4xl font-extrabold leading-none tracking-tight md:text-5xl text-[#16a34a] xl:text-6xl dark:text-[#16a34a]">

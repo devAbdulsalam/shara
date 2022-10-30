@@ -11,15 +11,21 @@ const [generalWaste, setGeneralWaste] = useState("0");
 const [nonRMaterialWaste, setNRMaterialWaste] = useState("0");
 const [total, setTotal] = useState(0);
 
-const calculateTotal = () => {
-    const GeneralWprice = (Number(generalWaste) * generalWRate)
-    const OrganicWprice = (Number(organicWaste) * organicWRate)
-    const PlasticWprice = (Number(plasticWaste) * plasticWRate)
-    const MetalWprice = (Number(metalWaste) * metalWRate)
-    const NonRecycleWprice = (Number(nonRMaterialWaste) * NonRWRate)
-    setTotal(PlasticWprice + MetalWprice + OrganicWprice + GeneralWprice - NonRecycleWprice)
-}
-    return (
+  const calculateTotal = () => {
+    const GeneralWprice = Number(generalWaste) * generalWRate;
+    const OrganicWprice = Number(organicWaste) * organicWRate;
+    const PlasticWprice = Number(plasticWaste) * plasticWRate;
+    const MetalWprice = Number(metalWaste) * metalWRate;
+    const NonRecycleWprice = Number(nonRMaterialWaste) * NonRWRate;
+    setTotal(
+      PlasticWprice +
+        MetalWprice +
+        OrganicWprice +
+        GeneralWprice -
+        NonRecycleWprice
+    );
+  };
+  return (
     <div>
         <Navbar />
         <div className="mt-3 w-full">
@@ -132,7 +138,7 @@ const calculateTotal = () => {
         </div>
         </div>
     </div>
-  )
-}
+  );
+};
 
-export default Despose
+export default Despose;

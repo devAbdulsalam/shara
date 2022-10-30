@@ -11,3 +11,4 @@ export { default as Location } from './Location';
 export { default as Welcome } from './Welcome';
 export { default as Amount } from './Amount';
 export { default as Home } from './Home';
+export { default as GreenChat } from './GreenChat';

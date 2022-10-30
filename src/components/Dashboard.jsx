@@ -28,8 +28,8 @@ const Dashboard = () => {
         </div> */}
 
       <Navbar />
-      <div class="z-[50] h-36 bg-transparent rounded-b-[30%] px-7">
-        <Splide className="my-3 p-3 bg-white" aria-label="myimges">
+      <div class="h-36 bg-transparent rounded-b-[30%] px-7">
+        <Splide className="mt-16 p-3 bg-white" aria-label="myimges">
           <SplideSlide>
             <img src={RecycleBin} alt="Img1" />
           </SplideSlide>
@@ -38,10 +38,10 @@ const Dashboard = () => {
           </SplideSlide>
         </Splide>
       </div>
-      <div class="mt-20 md:mx-32 mx-5 py-5">
+      <div class="mt-10 md:mx-32 mx-5 py-5">
         <div class="grid grid-cols-2 gap-x-4 gap-y-6">
           <a href="./wasteinfo">
-            <div className="bg-[#407BFF] rounded-lg text-white p-2 space-y-5 shadow-xl">
+            <div className="bg-[#16a34a] rounded-lg text-white p-2 space-y-5 shadow-xl">
               <div class="">
                 <svg
                   width="35"

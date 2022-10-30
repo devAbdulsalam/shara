@@ -28,10 +28,12 @@ const Login = () => {
                 onChange={(e) => setEmail(e.target.value)}
                 className='p-3 my-2 bg-gray-700 rouded'
                 type='email'
+                value={email}
                 placeholder='Email'
                 autoComplete='email'
               />
               <input
+                value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 className='p-3 my-2 bg-gray-700 rouded'
                 type='password'

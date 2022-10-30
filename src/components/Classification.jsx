@@ -8,7 +8,6 @@ const Classification = () => {
 
         <h1>Solid Rubbish</h1>
         <p>Solid rubbish can include a variety of items found in your household along with commercial and industrial locations.
-
 Solid rubbish is commonly broken down into the following types:</p>
         <ul>
             <li><span>Plastic waste</span>
@@ -20,7 +19,7 @@ Solid rubbish is commonly broken down into the following types:</p>
         <h1>Organic Waste</h1>
         <p>Organic waste is another common household. All food waste, garden waste, manure and rotten meat are classified as organic waste. Over time, organic waste is turned into manure by microorganisms. However, this does not mean that you can dispose of them anywhere.</p>
         <h1>Recyclable Rubbish</h1>
-        <p>yellow recycling Recyclable rubbish includes all waste items that can be converted into products that can be used again. Solid items such as paper, metals, furniture and organic waste can all be recycled.</p>
+        <p> Recyclable rubbish includes all waste items that can be converted into products that can be used again. Solid items such as paper, metals, furniture and organic waste can all be recycled.</p>
         <h1>Hazardous Waste</h1>
         <p>Hazardous waste includes all types of rubbish that are flammable, toxic, corrosive and reactive.</p>
         <p>These items can harm you as well as the environment and must be disposed of correctly. Therefore, I recommend you make use of a waste removal company for proper disposal of all hazardous waste.</p>

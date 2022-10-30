@@ -8,35 +8,40 @@ export const generalWRate = 10
 export const organicWRate = 13
 export const NonRWRate = 12
 
-export const WasteOptions = [
+export const wasteInfo = [
     {
-      type: "metalWaste",
-      value: "100",
-      icon: ""
+      name: "Metal Waste",
+      desc: "This can be found in various forms throughout your home. Most metals can be recycled. Consider taking these items to a scrap yard or your closest Brisbane recycling depot to dispose of this waste type properly.",
+      color: "gray-500",
+      hover: "gray-700",
     },
     {
-      type: "plasticWaste",
-      value: "100",
-      icon: ""
+      name: "Plastic Waste",
+      desc: "This consists of bags, containers, jars, bottles and many other products that can be found in your household. Plastic is not biodegradable, but many types of plastic can be recycled. Plastic should not be mixed in with your regular waste, it should be sorted and placed in your recycling bin.",
+      color: "blue-500",
+      hover: "blue-700",
     },
     {
-      type: "GeneralWaste",
-      value: "100",
-      icon: ""
+      name: "General Waste",
+      desc: "Solid rubbish can include a variety of items found in your household along with commercial and industrial locations.",
+      color: "yellow-500" ,
+      hover: "yellow-700",
+      types: [
+        {"papers" : "This includes packaging materials, newspapers, cardboard and other products. Paper can easily be recycled and reused so make sure to place them in your recycling bin or take them to your closest Brisbane recycling depot."},
+        {"ceramics": "These items can easily be recycled. Look for special glass recycling bins and bottle banks to dispose of them correctly."},
+        {"Liquid" : "Liquid waste is commonly found both in households as well as in industries. This waste includes dirty water, organic liquids, wash water, waste detergents and even rainwater. n/ You should also know that liquid waste can be classified into point and non-point source waste. All manufactured liquid waste is classified as point source waste. On the other hand, natural liquid waste is classified as non-point source waste."},
+      ],
     },
     {
-      type: "Material Waste",
-      value: "100",
-      icon: ""
+      name: "Organic Waste",
+      desc: "Organic waste is another common household. All food waste, garden waste, manure and rotten meat are classified as organic waste. Over time, organic waste is turned into manure by microorganisms. However, this does not mean that you can dispose of them anywhere.",
+      color: "green-500",
+      hover: "green-700",
     },
     {
-      type: "Organic Waste",
-      value: "100",
-      icon: ""
+      name: "Non Recyclable Waste", 
+      desc: "100",
+      color: "gray-500",
+      hover: "gray-700",
     },
-    {
-      type: "Organic Waste",
-      value: "100",
-      icon: ""
-    }
   ];

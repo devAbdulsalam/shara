@@ -37,7 +37,7 @@ const Climate = () => {
                     <div className='flext flex-col justify-center'>                       
                         <img src="https://img.icons8.com/fluency/48/000000/partly-cloudy-day.png"className=' mx-auto' alt="icon"></img>
                         <p>{data.main.pressure}</p>
-                        <p>Sun</p>
+                        <p>pressure</p>
                     </div>
                     <div className='flext flex-col justify-center '>
                         <img src="https://img.icons8.com/emoji/48/000000/cloud-with-rain-emoji.png" className=' mx-auto' alt="icon"></img>

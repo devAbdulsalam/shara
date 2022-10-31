@@ -17,19 +17,40 @@ const Climate = () => {
         }).catch((error) => console.log(error))
     },[])
 
+    console.log(data)
   return (
     <div>
         <Navbar />
-        <div className='p-4 mt-10'>
-            <div className='text-center text-blue-500 text-xl font-bold m-3 shadow-md p-4'>
-            {isLoading ? <SyncLoader  color="#36d7b7" size={6} /> : <>
-                <div className='flex justify-around items-center'>
-                    <img src={`http://openweathermap.org/img/w/${data.weather[0].icon}.png`} alt="icon"></img>
-                    <p className='text-xl'>{data.main.temp.toFixed(0)}&deg;C</p>
-                    <p className="">{data.weather[0].description[0].toUpperCase() + data.weather[0].description.substring(1)}</p>
+        <div className='p-4 mt-10 h-screen bg-gradient-to-br from-blue-900 via-blue-800 to-blue-500'>
+            <div className='text-center text-white text-xl font-bold m-3 p-4 '>
+            {isLoading ? <SyncLoader  color="#36d7b7" size={6} /> : 
+            <div>
+                <p className='font-bold'><ion-icon name="location" size="large"></ion-icon> {data.name}<span> {data.sys.country}.</span></p>
+                <div className='flex flex-col justify-around items-center'>
+                    <div className='p-2 m-4 debug'>
+                        <img src={`http://openweathermap.org/img/w/${data.weather[0].icon}.png`} className="w-28 h-28 object-fit" alt="icon"></img>
+                    </div>
+                    <p className="my-4'">Its {data.weather[0].description[0].toUpperCase() + data.weather[0].description.substring(1)}</p>
+                    <p className='text-7xl text-center p-5 my-4'>{data.main.temp.toFixed(0)}<span className='text-blue-300'>&deg;<sup>c</sup></span></p>
                 </div>
-                <p className='font-bold'>{data.name}</p>
-                </>
+                <div className='flex justify-between items-center text-center gap-4 mt-16'>
+                    <div className='flext flex-col justify-center'>                       
+                        <img src="https://img.icons8.com/fluency/48/000000/partly-cloudy-day.png"className=' mx-auto' alt="icon"></img>
+                        <p>{data.main.pressure}</p>
+                        <p>Sun</p>
+                    </div>
+                    <div className='flext flex-col justify-center '>
+                        <img src="https://img.icons8.com/emoji/48/000000/cloud-with-rain-emoji.png" className=' mx-auto' alt="icon"></img>
+                        <p>{data.main.humidity}</p>
+                        <p>Humidity</p>
+                    </div>
+                    <div className='flext flex-col justify-center'>         
+                        <img src="https://img.icons8.com/fluency/48/000000/torrential-rain.png" className='mx-auto' alt="icon"></img>
+                        <p>{data.wind.speed}</p>
+                        <p>Wind</p>
+                    </div>
+                </div>
+            </div>
             }
             </div>
         </div>

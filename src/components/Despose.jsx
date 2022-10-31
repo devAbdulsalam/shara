@@ -133,7 +133,7 @@ const Despose = () => {
                 <div className="text-yellow-600 md:block gap-2 bg-gray-200 rounded-b-[3rem]">
                   <div onClick={() => showDesc("general")} className="justify-center text-gray-50 cursor-pointer bg-yellow-600 p-2 rounded-b-full flex text-xl gap-2 my-2 items-center">
                     <h2 className="font-semibold">General Waste</h2>
-                    <span className="">1KG = {generalWRate}$</span>
+                    <span className=""> 1 KG = {generalWRate}$</span>
                   </div>
                  <div className={`${active === "general" ? "block" : "hidden"}`}>
                  <div className="justify-center flex flex-col gap-2 my-2 items-center">

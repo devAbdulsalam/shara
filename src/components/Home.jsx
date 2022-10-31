@@ -15,7 +15,7 @@ const Home = () => {
         </nav>
       </header>
       <section className="p-5 py-8 w-full">
-        <div className="grid max-w-screen-xl px-4 pt-12 mx-auto lg:gap-8 xl:gap-0 lg:py-10 lg:grid-cols-12 lg:pt-14">
+        <div className="grid max-w-screen-xl px-4 pt-5 mx-auto lg:gap-8 xl:gap-0 lg:py-10 lg:grid-cols-12 lg:pt-14">
           <div className="lg:mt-0 lg:col-span-5 lg:flex">
             <img src={TestiImage4} alt="hero" />
           </div>

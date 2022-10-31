@@ -1,6 +1,6 @@
 import React from 'react'
 import Navbar from './Navbar'
-import TestiImage4 from "../assets/Hello-rafiki.png";
+import TestiImage4 from "../assets/Garbagemanagement-cuate.png"
 
 const DesposeSent = () => {
   return (

@@ -45,7 +45,7 @@ const Login = () => {
                 />
 
                 <Link to="/dashboard">
-                  <button className="bg-blue-600 w-full text-white py-3 my-6 rounded font-bold">
+                  <button className="bg-green-600 w-full text-white py-3 my-6 rounded font-bold">
                     Login
                   </button>
                 </Link>

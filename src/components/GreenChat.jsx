@@ -6,7 +6,7 @@ const GreenChat = () => {
       <div class="relative">
         <div class="flex justify-between px-5 py-4 text-xl items-center bg-green-500 text-white fixed top-0 w-full">
           <div class="space-x-5 flex items-center">
-            <a href="./home.html">
+            <a href="./home">
               <i class="fa-solid fa-arrow-left"></i>
             </a>
             <p>Chat Forum</p>

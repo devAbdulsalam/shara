@@ -12,7 +12,7 @@ const WasteInfo = () => {
   return (
     <div>
       <Navbar />
-      <div className="mt-3">
+      <div className="mt-6">
         <div className="flex bg-white rounded-lg shadow-lg overflow-hidden mx-auto max-w-sm lg:max-w-4xl">
             <div
                 className="hidden lg:block lg:w-1/2 bg-cover"
@@ -32,13 +32,13 @@ const WasteInfo = () => {
                 <div className="py-3">
                     {wasteInfo.map((item, index) => (
                     <div key={index} className="">
-                        <button className={`${active === index ? 'text-teal-400' : "text-white" } w-full p-1 cursor-pointer border-${item.color} group hover:bg-${item.hover} my-2 border-2 rounded-2xl`} 
+                        <button className={` w-full p-1 cursor-pointer border-${item.color} group hover:bg-${item.color} my-2 border-2 rounded-2xl`} 
                             onClick={() => showDesc(index)} >
-                            <div className="flex justify-around item-center duration-500 w-full" >
+                            <div className="flex justify-around item-center w-full" >
                             <h5 className={`text-xl m-3 font-semibold text-${item.color} group-hover:text-white dark:text-light`}>
                             {item.name}                            
                             </h5>
-                            <i className={`p-2 fa-solid ${active === index ? "fa-plus" : "fa-minus" } text-${item.color}`}></i>
+                            <i className={`p-2 fa-solid ${active === index ? "fa-plus" : "fa-minus" } text-${item.color} duration-500`}></i>
                             </div>
                         </button>
                         <div className={`p-3 ${active === index ? "block" : "hidden"} duration-500`}>
@@ -51,7 +51,7 @@ const WasteInfo = () => {
                         </div>
                     </div> ))}             
                 </div>
-                <div className="pt-5">
+                <div className="pt-3">
                     <a href="./depose">
                         <button className="bg-blue-700 text-white font-bold py-4 px-4 w-full hover:bg-blue-500 rounded-2xl">Continue</button>
                     </a>
@@ -64,3 +64,5 @@ const WasteInfo = () => {
 };
 
 export default WasteInfo;
+
+// ${active === index ? 'text-teal-400' : "text-white" }

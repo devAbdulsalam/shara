@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, {useState} from "react";
 import {
   plasticWRate,
   metalWRate,
@@ -17,6 +17,13 @@ const Despose = () => {
   const [generalWaste, setGeneralWaste] = useState("0");
   const [nonRMaterialWaste, setNRMaterialWaste] = useState("0");
   const [total, setTotal] = useState(0);
+  const [active, setActive] = useState(false)
+  const showDesc = id =>{
+    if(active === id){
+       return setActive(null)
+    }
+      setActive(id)
+  }
 
   const calculateTotal = () => {
     const GeneralWprice = Number(generalWaste) * generalWRate;
@@ -56,11 +63,11 @@ const Despose = () => {
             <div className="py-3 ">
               <div className="">
                     <div className="text-gray-700 md:block gap-2 bg-gray-200 rounded-b-[3rem]">
-                      <div className="justify-center cursor-pointer text-gray-50 bg-gray-700 p-2 rounded-b-full flex text-xl gap-2 my-2 items-center">
+                      <div onClick={() => showDesc("metal")} className="justify-center cursor-pointer text-gray-50 bg-gray-700 p-2 rounded-b-full flex text-xl gap-2 my-2 items-center">
                         <h2 className="font-semibold">Metal Waste</h2>
                         <span className="">1KG = {metalWRate}$</span>
                       </div>
-                     <div className="hidden">
+                     <div className={`${active === "metal" ? "block" : "hidden"}`}>
                      <div className="justify-center flex flex-col gap-2 my-2 items-center">
                         <input
                           type="number"
@@ -72,41 +79,41 @@ const Despose = () => {
                         />
                       </div>
                       <p className="text-xl ml-3">EARN</p>
-                      <p className="text-5xl ml-3 font-bold">
+                      <p className="text-3xl ml-3 font-bold">
                         ${Number(metalWaste) * metalWRate}
                       </p>
                      </div>
                     </div>
 
                   <div className="text-blue-600 md:block gap-2 bg-gray-200 rounded-b-[3rem]">
-                  <div className="justify-center text-gray-50 cursor-pointer bg-blue-600 p-2 rounded-b-full flex text-xl gap-2 my-2 items-center">
+                  <div onClick={() => showDesc("plastic")} className="justify-center text-gray-50 cursor-pointer bg-blue-600 p-2 rounded-b-full flex text-xl gap-2 my-2 items-center">
                     <h2 className="font-semibold">Plastic Waste</h2>
                     <span className="">1KG = {plasticWRate}$</span>
                   </div>
-                <div className="hidden">
-                <div className="justify-center flex flex-col gap-2 my-2 items-center">
-                    <input
-                      type="number"
-                      id=""
-                      className="px-3 py-1.5 text-lg w-56 font-normal text-blue-500 rounded-b-[1rem] bg-clip-padding border-0 border-b-2 border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
-                      value={plasticWaste}
-                      onChange={(e) => setPlasticWaste(e.target.value)}
-                      onKeyUp={calculateTotal}
-                    />
-                  </div>
-                  <p className="text-xl ml-3">EARN</p>
-                  <p className="text-5xl ml-3 font-bold">
-                      ${Number(plasticWaste) * plasticWRate}
-                    </p>
-                </div>
+                <div className={`${active === "plastic" ? "block" : "hidden"}`}>
+                    <div className="justify-center flex flex-col gap-2 my-2 items-center">
+                        <input
+                        type="number"
+                        id=""
+                        className="px-3 py-1.5 text-lg w-56 font-normal text-blue-500 rounded-b-[1rem] bg-clip-padding border-0 border-b-2 border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                        value={plasticWaste}
+                        onChange={(e) => setPlasticWaste(e.target.value)}
+                        onKeyUp={calculateTotal}
+                        />
+                    </div>
+                    <p className="text-xl ml-3">EARN</p>
+                    <p className="text-3xl ml-3 font-bold">
+                        ${Number(plasticWaste) * plasticWRate}
+                        </p>
+                    </div>
                 </div>
 
                 <div className="text-green-600 md:block gap-2 bg-gray-200 rounded-b-[3rem]">
-                  <div className="justify-center text-gray-50 cursor-pointer bg-green-600 p-2 rounded-b-full flex text-xl gap-2 my-2 items-center">
+                  <div onClick={() => showDesc("organic")} className="justify-center text-gray-50 cursor-pointer bg-green-600 p-2 rounded-b-full flex text-xl gap-2 my-2 items-center">
                     <h2 className="font-semibold">Organic Waste</h2>
                     <span className="">1KG = {organicWRate}$</span>
                   </div>
-                 <div className="hidden">
+                 <div className={`${active === "organic" ? "block" : "hidden"}`}>
                  <div className="justify-center flex flex-col gap-2 my-2 items-center">
                     <input
                       type="number"
@@ -118,17 +125,17 @@ const Despose = () => {
                     />
                   </div>
                   <p className="text-xl ml-3">EARN</p>
-                  <p className="text-5xl ml-3 font-bold">
+                  <p className="text-3xl ml-3 font-bold">
                     ${Number(organicWaste) * organicWRate}
                     </p>
                  </div>
                 </div>
                 <div className="text-yellow-600 md:block gap-2 bg-gray-200 rounded-b-[3rem]">
-                  <div className="justify-center text-gray-50 cursor-pointer bg-yellow-600 p-2 rounded-b-full flex text-xl gap-2 my-2 items-center">
+                  <div onClick={() => showDesc("general")} className="justify-center text-gray-50 cursor-pointer bg-yellow-600 p-2 rounded-b-full flex text-xl gap-2 my-2 items-center">
                     <h2 className="font-semibold">General Waste</h2>
                     <span className="">1KG = {generalWRate}$</span>
                   </div>
-                 <div className="hidden">
+                 <div className={`${active === "general" ? "block" : "hidden"}`}>
                  <div className="justify-center flex flex-col gap-2 my-2 items-center">
                     <input
                       type="number"
@@ -140,17 +147,17 @@ const Despose = () => {
                     />
                   </div>
                   <p className="text-xl ml-3">EARN</p>
-                  <p className="text-5xl ml-3 font-bold">
+                  <p className="text-3xl ml-3 font-bold">
                       ${Number(organicWaste) * generalWRate}
                     </p>
                  </div>
                 </div>
                 <div className="text-red-600 md:block gap-2 bg-gray-200 rounded-b-[3rem]">
-                  <div className="justify-center text-gray-50 cursor-pointer bg-red-600 p-2 rounded-b-full flex text-xl gap-2 my-2 items-center">
+                  <div onClick={() => showDesc("material")} className="justify-center text-gray-50 cursor-pointer bg-red-600 p-2 rounded-b-full flex text-xl gap-2 my-2 items-center">
                     <h2 className="font-semibold">Material Waste</h2>
                     <span className="">1KG = {NonRWRate}$</span>
                   </div>
-                <div className="hidden">
+                <div className={`${active === "material" ? "block" : "hidden"}`}>
                 <div className="justify-center flex flex-col gap-2 my-2 items-center">
                     <input
                       type="number"
@@ -162,14 +169,14 @@ const Despose = () => {
                     />
                   </div>
                   <p className="text-xl ml-3">PAY</p>
-                    <p className="text-5xl ml-3 font-bold">
+                    <p className="text-3xl ml-3 font-bold">
                       ${Number(nonRMaterialWaste) * NonRWRate}
                     </p>
                 </div>
                 </div>
               </div>
               <div
-                className={`text-5xl ml-3 font-bold pt-2 ${
+                className={`text-3xl ml-3 font-bold pt-2 ${
                   total >= 0 ? "text-green-500 " : "text-red-500"
                 }`}
               >
@@ -184,7 +191,7 @@ const Despose = () => {
                 )}
               </div>
             </div>
-            <div className="p-5 pt-5 w-full md:w-1/2 mx-auto flex justify-between">
+            <div className="pt-5 w-full md:w-1/2 mx-auto flex justify-between">
               <a href="./dashboard">
                 <button className="bg-red-700 text-white font-bold py-4 px-8 hover:bg-red-500 rounded-xl">
                   Cancle

@@ -1,14 +1,15 @@
 import React from 'react'
 import Navbar from './Navbar'
+import TestiImage4 from "../assets/Hello-rafiki.png";
 
 const DesposeSent = () => {
   return (
 	<div>
       <Navbar />
-      <section className="p-2 py-10">
+      <section className="p-2 mt-12 py-10">
         <div className="grid max-w-screen-xl px-4 pt-5 mx-auto lg:gap-8 xl:gap-0 lg:py-10 lg:grid-cols-12 lg:pt-28">
           <div className="lg:mt-0 lg:col-span-5 lg:flex">
-            <img src="../assets/Police car-rafiki.png" alt="hero" />
+            <img src={TestiImage4} alt="hero" />
           </div>
           <div className="mr-auto place-self-center lg:col-span-7 md:text-left text-center">
             <h1

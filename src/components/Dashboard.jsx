@@ -8,9 +8,9 @@ import Navbar from "./Navbar";
 const Dashboard = () => {
   return (
     <div>
-      {/* <div class="h-36 bg-transparent rounded-b-[30%] px-7">
-        <div class="flex items-center py-5 mb-5 justify-between">
-          <div onclick="toggle()" class="toggleBtn cursor-pointer">
+      {/* <div className="h-36 bg-transparent rounded-b-[30%] px-7">
+        <div className="flex items-center py-5 mb-5 justify-between">
+          <div onclick="toggle()" className="toggleBtn cursor-pointer">
             <svg
               width="24"
               height="16"
@@ -24,11 +24,11 @@ const Dashboard = () => {
               />
             </svg>
           </div>
-          <img src={UserImg} alt="" class="w-14 h-14 rounded-full" />
+          <img src={UserImg} alt="" className="w-14 h-14 rounded-full" />
         </div> */}
 
       <Navbar />
-      <div class="h-36 bg-transparent rounded-b-[30%] px-7">
+      <div className="h-36 bg-transparent rounded-b-[30%] px-7">
         <Splide className="mt-16 p-3 bg-white" aria-label="myimges">
           <SplideSlide>
             <img src={RecycleBin} alt="Img1" />
@@ -38,11 +38,11 @@ const Dashboard = () => {
           </SplideSlide>
         </Splide>
       </div>
-      <div class="mt-10 md:mx-32 mx-5 py-5">
-        <div class="grid grid-cols-2 gap-x-4 gap-y-6">
+      <div className="mt-10 md:mx-32 mx-5 py-5">
+        <div className="grid grid-cols-2 gap-x-4 gap-y-6">
           <a href="./wasteinfo">
             <div className="bg-[#16a34a] rounded-lg text-white p-2 space-y-5 shadow-xl">
-              <div class="">
+              <div className="">
                 <svg
                   width="35"
                   height="40"
@@ -55,13 +55,13 @@ const Dashboard = () => {
                   />
                 </svg>
               </div>
-              <p class="font-bold text-sm leading-tight">Dispose Waste</p>
+              <p className="font-bold text-sm leading-tight">Dispose Waste</p>
             </div>
           </a>
 
-          <a href="./.html">
-            <div class="bg-white rounded-lg text-[#16a34a] p-2 space-y-5 shadow-xl">
-              <div class="">
+          <a href="./climate">
+            <div className="bg-white rounded-lg text-[#16a34a] p-2 space-y-5 shadow-xl">
+              <div className="">
                 <svg
                   width="35"
                   height="40"
@@ -74,12 +74,12 @@ const Dashboard = () => {
                   />
                 </svg>
               </div>
-              <p class="font-bold text-sm leading-tight">Climate Update</p>
+              <p className="font-bold text-sm leading-tight">Climate Update</p>
             </div>
           </a>
-          <a href="./calender.html">
-            <div class="bg-white rounded-lg text-[#16a34a] p-4 space-y-5 shadow-xl">
-              <div class="">
+          <a href="./profile">
+            <div className="bg-white rounded-lg text-[#16a34a] p-4 space-y-5 shadow-xl">
+              <div className="">
                 <svg
                   width="35"
                   height="40"
@@ -92,12 +92,12 @@ const Dashboard = () => {
                   />
                 </svg>
               </div>
-              <p class="font-bold text-sm leading-tight">My profile</p>
+              <p className="font-bold text-sm leading-tight">My profile</p>
             </div>
           </a>
-          <a href="./calender.html">
-            <div class="bg-white rounded-lg text-[#16a34a] p-4 space-y-5 shadow-xl">
-              <div class="">
+          <a href="./chat">
+            <div className="bg-white rounded-lg text-[#16a34a] p-4 space-y-5 shadow-xl">
+              <div className="">
                 <svg
                   width="35"
                   height="40"
@@ -110,12 +110,12 @@ const Dashboard = () => {
                   />
                 </svg>
               </div>
-              <p class="font-bold text-sm leading-tight">Green Chat</p>
+              <p className="font-bold text-sm leading-tight">Green Chat</p>
             </div>
           </a>
-          <a href="./calender.html">
-            <div class="bg-white rounded-lg text-[#16a34a] p-4 space-y-5 shadow-xl">
-              <div class="">
+          <a href="./chat">
+            <div className="bg-white rounded-lg text-[#16a34a] p-4 space-y-5 shadow-xl">
+              <div className="">
                 <svg
                   width="35"
                   height="40"
@@ -128,12 +128,12 @@ const Dashboard = () => {
                   />
                 </svg>
               </div>
-              <p class="font-bold text-sm leading-tight">Tips</p>
+              <p className="font-bold text-sm leading-tight">Tips</p>
             </div>
           </a>
-          <a href="./calender.html">
-            <div class="bg-white rounded-lg text-[#16a34a] p-4 space-y-5 shadow-xl">
-              <div class="">
+          <a href="./wallat">
+            <div className="bg-white rounded-lg text-[#16a34a] p-4 space-y-5 shadow-xl">
+              <div className="">
                 <svg
                   width="35"
                   height="40"
@@ -146,7 +146,7 @@ const Dashboard = () => {
                   />
                 </svg>
               </div>
-              <p class="font-bold text-sm leading-tight">Wallet</p>
+              <p className="font-bold text-sm leading-tight">Wallet</p>
             </div>
           </a>
         </div>

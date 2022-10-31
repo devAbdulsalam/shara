@@ -1,6 +1,7 @@
 import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { Amount, Dashboard, Despose, DesposeSent, Login, Location, Signin, Notification, WasteInfo, Wallet, Profile, Welcome, Home,GreenChat } from './components/Index';
+import { Amount, Dashboard, Despose, DesposeSent, Login, Location, Signin, Notification, WasteInfo, Wallet, Profile, Welcome, Order, Home, Climate, GreenChat } from './components/Index';
+
 
 
 function App() {
@@ -21,6 +22,8 @@ function App() {
         <Route path="/wallet" exact element={<Wallet />}></Route>
         <Route path="/wasteinfo" exact element={<WasteInfo />}></Route>
         <Route path="/home" exact element={<Home />}></Route>
+        <Route path="/climate" exact element={<Climate />}></Route>
+        <Route path="/order" exact element={<Order />}></Route>
         <Route path="/chat" exact element={<GreenChat />}></Route>
 			</Routes>
 	</BrowserRouter>

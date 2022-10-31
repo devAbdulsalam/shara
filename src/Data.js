@@ -1,5 +1,12 @@
-// import TestiImage3 from './assets/testimonials/testimonial-3.webp';
-
+export const menuLinks = [
+    { name: "Home", link: "./home" },
+    { name: "Order", link: "./order"},
+    { name: "Wallet", link: "./wallet" },
+    { name: "Profile", link: "./profile" },
+    { name: "Setting", link: "#" },
+    { name: "About", link: "#" },
+    { name: "Logout", link: "./login" },
+  ];
 
 // // Wastes
 export const plasticWRate = 12

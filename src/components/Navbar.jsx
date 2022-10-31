@@ -1,16 +1,9 @@
 import React, { useState} from "react";
+import {menuLinks} from "../Data";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
-  const menuLinks = [
-    { name: "HOME", link: "./home" },
-    { name: "Order", link: "./order"},
-    { name: "Wallet", link: "./wallet" },
-    { name: "Profile", link: "./profile" },
-    { name: "Setting", link: "#" },
-    { name: "About", link: "#" },
-    { name: "Logout", link: "./login" },
-  ];
+  
   return (
     <nav
       className={`w-full left-0 top-0 z-[999] absolute bg-gray-100 shadow-lg text-white}`}>
@@ -30,13 +23,13 @@ const Navbar = () => {
             </svg>
         </div>
         <div className="mx-7 z-[999]">
-          <h4 className={`text-lg md:text-3xl uppercase font-bold  ${open ? "text-gray-900" : "text-gray-100"} text-blue-600`}>
-            Clean<span className="text-white">Wealth</span>
+          <h4 className={`text-lg md:text-3xl uppercase font-bold  ${open ? "text-green-500" : "text-green-700"} text-blue-600`}>
+            Treasured<span className="text-green-500"> Trash</span>
           </h4>
         </div>
         <div  className={`text-gray-900 absolute w-2/3 h-screen  px-7 py-2 font-medium bg-white top-0 duration-300 ${open ? "left-0" : "left-[-100%]" }`}>
           <ul className="flex flex-col justify-center h-full gap-10 py-2 text-lg">
-            {menuLinks?.map((menu, i) => (
+            {menuLinks.map((menu, i) => (
               <li
                 onClick={() => setOpen(false)}
                 key={i}

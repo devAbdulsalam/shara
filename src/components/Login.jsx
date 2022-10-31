@@ -1,17 +1,25 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import TestiImage4 from "../assets/Hello-rafiki.png";
 
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
   return (
-    <>
       <div className="w-full h-screen">
+        <header className="fixed w-full">
+          <nav className="border-gray-200 py-2.5">
+            <div className="flex flex-wrap items-center justify-between max-w-screen-xl px-4 mx-auto">
+              <div className="flex items-center justify-center w-full h-5 mt-3">
+                <h1 className="text-xl text-green-700">Treasured Trash</h1>
+              </div>
+            </div>
+          </nav>
+        </header>
         <img
           className="hidden sm:block absolute w-full h-full object-cover"
-          src=""
-          alt="/"
+          src={TestiImage4} alt="hero"
         />
         <div className="bg-white fixed top-0 left-0 w-full h-screen"></div>
         <div className="fixed w-full px-4 py-24 z-50">
@@ -51,16 +59,15 @@ const Login = () => {
                 </div>
                 <p className="py-8">
                   <span className="text-gray-600">
-                    Already subscribed to Waste2Wealth?
-                  </span>{" "}
-                  <Link to="/signin">Signin</Link>
+                    Not on<span className="text-green-700">TreasuredTrash?</span> 
+                  </span>
+                  <Link to="/signin">Sign in</Link>
                 </p>
               </form>
             </div>
           </div>
         </div>
       </div>
-    </>
   );
 };
 

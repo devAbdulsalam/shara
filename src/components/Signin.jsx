@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import TestiImage4 from "../assets/Hello-rafiki.png";
 
 const Signup = () => {
   const [email, setEmail] = useState('');
@@ -18,12 +19,19 @@ const Signup = () => {
   };
 console.log(user)
   return (
-    <>
-      <div className="w-full h-screen">
+      <div className="w-full h-screen relative debug">
+        <header className="fixed w-full">
+          <nav className="border-gray-200 py-2.5">
+            <div className="flex flex-wrap items-center justify-between max-w-screen-xl px-4 mx-auto">
+              <div className="flex items-center justify-center w-full h-5 mt-3">
+                <h1 className="text-xl text-green-700">Treasured Trash</h1>
+              </div>
+            </div>
+          </nav>
+        </header>
         <img
-          className="hidden sm:block absolute w-full h-full object-cover"
-          src=""
-          alt="/"
+          className="hidden sm:block absolute w-full h-full object-cover debug"
+          src={TestiImage4} alt="hero"
         />
         <div className="bg-white fixed top-0 left-0 w-full h-screen"></div>
         <div className="fixed w-full px-4 py-24 z-50">
@@ -66,7 +74,7 @@ console.log(user)
                 </div>
                 <p className="py-8">
                   <span className="text-gray-600">
-                    Already subscribed to Waste2Wealth?
+                    Already subscribed to <span className="text-green-700">TreasuredTrash?</span>?
                   </span>{" "}
                   <Link to="/login">Login</Link>
                 </p>
@@ -75,7 +83,6 @@ console.log(user)
           </div>
         </div>
       </div>
-    </>
   );
 };
 

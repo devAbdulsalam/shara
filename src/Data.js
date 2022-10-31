@@ -1,11 +1,11 @@
 export const menuLinks = [
-    { name: "Home", link: "./home" },
-    { name: "Order", link: "./order"},
-    { name: "Wallet", link: "./wallet" },
-    { name: "Profile", link: "./profile" },
-    { name: "Setting", link: "#" },
-    { name: "About", link: "#" },
-    { name: "Logout", link: "./login" },
+    { name: "Home", link: "./home", icon :"home" },
+    { name: "Order", link: "./order", icon : "trash-bin"},
+    { name: "Wallet", link: "./wallet", icon : "wallet"},
+    { name: "Profile", link: "./profile", icon : "person"},
+    { name: "Setting", link: "#", icon : "settings"},
+    { name: "About", link: "#", icon : "information-circle"},
+    { name: "Logout", link: "./login", icon : "log-out"},
   ];
 
 // // Wastes

@@ -48,7 +48,7 @@ export const wasteInfo = [
     {
       name: "Non Recyclable Waste", 
       desc: "Non-Recyclable waste means all garbage, and other refuse not defined as recyclable materials",
-      color: "gray-500",
-      hover: "gray-700",
+      color: "red-500",
+      hover: "red-700",
     },
   ];

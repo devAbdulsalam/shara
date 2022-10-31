@@ -186,12 +186,12 @@ const Despose = () => {
                   </p>
                 ) : (
                   <p className="">
-                    PAY : <span className="">{total}</span>
+                    PAY : <span className="">{total.toString().substring(1)}</span>
                   </p>
                 )}
               </div>
             </div>
-            <div className="pt-5 w-full md:w-1/2 mx-auto flex justify-between">
+            <div className="pt-5 w-full mx-auto flex justify-between">
               <a href="./dashboard">
                 <button className="bg-red-700 text-white font-bold py-4 px-8 hover:bg-red-500 rounded-xl">
                   Cancle

@@ -27,7 +27,7 @@ const Navbar = () => {
             Treasured<span className="text-green-500"> Trash</span>
           </h4>
         </div>
-        <div  className={`text-gray-900 absolute w-2/3 h-screen  px-7 py-2 font-medium bg-white top-0 duration-300 ${open ? "left-0" : "left-[-100%]" }`}>
+        <div  className={`text-gray-900 absolute w-2/3 md:w-1/6 h-screen  px-7 py-2 font-medium bg-white top-0 duration-300 ${open ? "left-0" : "left-[-100%]" }`}>
           <ul className="flex flex-col justify-center h-full gap-10 py-2 text-lg">
             {menuLinks.map((menu, i) => (
               <li

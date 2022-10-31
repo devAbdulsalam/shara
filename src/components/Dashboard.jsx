@@ -41,7 +41,7 @@ const Dashboard = () => {
       <div className="mt-10 md:mx-32 mx-5 py-5">
         <div className="grid grid-cols-2 gap-x-4 gap-y-6">
           <a href="./wasteinfo">
-            <div className="bg-[#16a34a] rounded-lg text-white p-2 space-y-5 shadow-xl">
+            <div className="bg-[#16a34a] rounded-lg text-white p-2 space-y-5 shadow-lg">
               <div className="">
                 <svg
                   width="35"
@@ -60,7 +60,7 @@ const Dashboard = () => {
           </a>
 
           <a href="./climate">
-            <div className="bg-white rounded-lg text-[#16a34a] p-2 space-y-5 shadow-xl">
+            <div className="bg-white rounded-lg text-[#16a34a] p-2 space-y-5 shadow-lg">
               <div className="">
                 <svg
                   width="35"
@@ -78,7 +78,7 @@ const Dashboard = () => {
             </div>
           </a>
           <a href="./profile">
-            <div className="bg-white rounded-lg text-[#16a34a] p-4 space-y-5 shadow-xl">
+            <div className="bg-white rounded-lg text-[#16a34a] p-4 space-y-5 shadow-lg">
               <div className="">
                 <svg
                   width="35"
@@ -96,7 +96,7 @@ const Dashboard = () => {
             </div>
           </a>
           <a href="./chat">
-            <div className="bg-white rounded-lg text-[#16a34a] p-4 space-y-5 shadow-xl">
+            <div className="bg-white rounded-lg text-[#16a34a] p-4 space-y-5 shadow-lg">
               <div className="">
                 <svg
                   width="35"
@@ -114,7 +114,7 @@ const Dashboard = () => {
             </div>
           </a>
           <a href="./chat">
-            <div className="bg-white rounded-lg text-[#16a34a] p-4 space-y-5 shadow-xl">
+            <div className="bg-white rounded-lg text-[#16a34a] p-4 space-y-5 shadow-lg">
               <div className="">
                 <svg
                   width="35"
@@ -132,7 +132,7 @@ const Dashboard = () => {
             </div>
           </a>
           <a href="./wallat">
-            <div className="bg-white rounded-lg text-[#16a34a] p-4 space-y-5 shadow-xl">
+            <div className="bg-white rounded-lg text-[#16a34a] p-4 space-y-5 shadow-lg">
               <div className="">
                 <svg
                   width="35"

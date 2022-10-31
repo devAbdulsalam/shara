@@ -12,7 +12,7 @@ const WasteInfo = () => {
   return (
     <div>
       <Navbar />
-      <div className="mt-6">
+      <div className="mt-14">
         <div className="flex bg-white rounded-lg shadow-lg overflow-hidden mx-auto max-w-sm lg:max-w-4xl">
             <div
                 className="hidden lg:block lg:w-1/2 bg-cover"
@@ -25,24 +25,24 @@ const WasteInfo = () => {
                 <h2 className="text-2xl font-semibold text-gray-700 text-center p">
                     Know your Waste?
                 </h2>
-                <p className="text-sm text-gray-600 text-center">
+                <p className="text-lg text-gray-600 text-center">
                     Check and Know your treasured trash
                 </p>
                 </div>
                 <div className="py-3">
                     {wasteInfo.map((item, index) => (
                     <div key={index} className="">
-                        <button className={` w-full p-1 cursor-pointer border-${item.color} group hover:bg-${item.color} my-2 border-2 rounded-2xl`} 
+                        <button className={` w-full p-1 cursor-pointer border-gray-300 my-2 border-2 rounded-2xl`}
                             onClick={() => showDesc(index)} >
-                            <div className="flex justify-around item-center w-full" >
-                            <h5 className={`text-xl m-3 font-semibold text-${item.color} group-hover:text-white dark:text-light`}>
+                            <div className="flex justify-between item-center w-full" >
+                            <h5 className={`text-xl m-3 font-semibold text-${item.color} dark:text-light`}>
                             {item.name}                            
                             </h5>
-                            <i className={`p-2 fa-solid ${active === index ? "fa-plus" : "fa-minus" } text-${item.color} duration-500`}></i>
+                            <i className={`p-4 w-12 fa-solid ${active === index ? "fa-plus" : "fa-minus" } group-hover:text-white text-${item.color} duration-500`}></i>
                             </div>
                         </button>
-                        <div className={`p-3 ${active === index ? "block" : "hidden"} duration-500`}>
-                            <p className="text-justify duration-500">{item.desc}</p>
+                        <div className={`p-3 ${active === index ? "block" : "hidden"}`}>
+                            <p className={`text-justify text-lg font-medium text-${item.color}`}>{item.desc}</p>
                             {/* <ul>
                                 {item.types.map((item, index) => (
                                     <li key={index}>{item}</li>

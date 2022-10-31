@@ -5,7 +5,9 @@ const Order = () => {
   return (
     <div>
       <Navbar />
-    <p>Order</p>
+      <div className='py-10 m-6'>
+        <p>Order</p>
+      </div>
     </div>
   )
 }

@@ -1,8 +1,6 @@
 import React, {useState} from 'react'
 import Navbar from './Navbar'
 import {useNavigate } from "react-router-dom";
-import './checkbox.css';
-
 const Order = () => { 
   const navigate = useNavigate()
   const [location, setLocation] = useState("");

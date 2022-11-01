@@ -1,5 +1,5 @@
 export const menuLinks = [
-    { name: "Home", link: "./home", icon :"home" },
+    { name: "Home", link: "./dashboard", icon :"home" },
     { name: "Order", link: "./order", icon : "trash-bin"},
     { name: "Wallet", link: "./wallet", icon : "wallet"},
     { name: "Profile", link: "./profile", icon : "person"},

@@ -10,7 +10,6 @@ import Navbar from "./Navbar";
 
 
 const Despose = () => {
-  // const [location, setLocation] = useState("");
   const [plasticWaste, setPlasticWaste] = useState("0");
   const [metalWaste, setMetalWaste] = useState("0");
   const [organicWaste, setOrganicWaste] = useState("0");

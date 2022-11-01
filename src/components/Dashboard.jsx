@@ -40,7 +40,7 @@ const Dashboard = () => {
       </div>
       <div className="mt-10 md:mx-32 mx-5 py-5">
         <div className="grid grid-cols-2 gap-x-4 gap-y-6">
-          <a href="./wasteinfo">
+          <a href="./order">
             <div className="bg-[#16a34a] rounded-lg text-white p-2 space-y-5 shadow-lg">
               <div className="">
                 <svg
@@ -113,7 +113,7 @@ const Dashboard = () => {
               <p className="font-bold text-sm leading-tight">Green Chat</p>
             </div>
           </a>
-          <a href="./chat">
+          <a href="./wasteinfo">
             <div className="bg-white rounded-lg text-[#16a34a] p-4 space-y-5 shadow-lg">
               <div className="">
                 <svg

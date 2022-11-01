@@ -57,5 +57,4 @@ const Climate = () => {
     </div>
   )
 }
-
 export default Climate

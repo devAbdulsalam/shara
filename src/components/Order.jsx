@@ -1,29 +1,33 @@
 import React, {useState} from 'react'
+import MapContainer from './MapContainer'
 import Navbar from './Navbar'
-import {useNavigate } from "react-router-dom";
+// import {useNavigate } from "react-router-dom";
 const Order = () => { 
-  const navigate = useNavigate()
-  const [location, setLocation] = useState("");
-  const [selectedwastes, setSelectedWastes] = useState([]) 
-    const handleChange = (event) =>{
-        const selectwaste = event.target.value
-        const isChecked = event.target.checked;
-          if(isChecked){
-              setSelectedWastes( prevWaste => ([...selectedwastes, selectwaste]));
-          }else{
-              let index = selectedwastes.indexOf(selectwaste);
-              selectedwastes.splice(index, 1);
-              setSelectedWastes([selectwaste ]);
-            }
-        console.log(selectedwastes)
-      }
-    const handleSubmit = () =>{  
-        navigate("/desposesent");
-    }
+  // const navigate = useNavigate()
+  // const [location, setLocation] = useState("");
+  // const [selectedwastes, setSelectedWastes] = useState([]) 
+  //   const handleChange = (event) =>{
+  //       const selectwaste = event.target.value
+  //       const isChecked = event.target.checked;
+  //         if(isChecked){
+  //             setSelectedWastes( prevWaste => ([...selectedwastes, selectwaste]));
+  //         }else{
+  //             let index = selectedwastes.indexOf(selectwaste);
+  //             selectedwastes.splice(index, 1);
+  //             setSelectedWastes([selectwaste ]);
+  //           }
+  //       console.log(selectedwastes)
+  //     }
+  //   const handleSubmit = () =>{  
+  //       navigate("/desposesent");
+  //   }
   return (
+    
     <div>
       <Navbar />
-      <div className='py-10 m-6'>
+      <MapContainer />
+      <img src="https://www.pexels.com/photo/recyclable-plastic-bottles-in-tote-bags-7772006/" class="w-screen h-screen portrait:w-10" alt="" />
+      {/* <div className='py-10 m-6'>
         <div className="lg:max-w-2xl mx-auto my-5 p-5 flex flex-col justify-center bg-green-500 text-gray-50 rounded-xl">
             <div className="mx-auto text-center">
               <h2 className="text-2xl font-semibold text-center p">
@@ -70,7 +74,7 @@ const Order = () => {
                 </button>
             </div> 
         </div>
-      </div>
+      </div> */}
     </div>
   )
 }

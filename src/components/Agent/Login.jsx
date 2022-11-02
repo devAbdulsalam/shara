@@ -1,25 +1,13 @@
 import React, { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import TestiImage4 from "../assets/Hello-rafiki.png";
 
-const Signup = () => {
-  const [email, setEmail] = useState('');
-  // const [name, setName] = useState('');
-  const [password, setPassword] = useState('');
-  const navigate = useNavigate()
-  const { user, signUp } = useState();
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    try {
-      await signUp(email, password);
-      navigate("/");
-    } catch (error) {
-      console.log(error);
-    }
-  };
-console.log(user)
+const Login = () => {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
   return (
-      <div className="w-full h-screen relative debug">
+      <div className="w-full h-screen">
         <header className="fixed w-full">
           <nav className="border-gray-200 py-2.5">
             <div className="flex flex-wrap items-center justify-between max-w-screen-xl px-4 mx-auto">
@@ -30,23 +18,20 @@ console.log(user)
           </nav>
         </header>
         <img
-          className="hidden sm:block absolute w-full h-full object-cover debug"
+          className="hidden sm:block absolute w-full h-full object-cover"
           src={TestiImage4} alt="hero"
         />
-        <div className="fixed top-0 left-0 w-full h-screen"></div>
+        <div className="bg-white fixed top-0 left-0 w-full h-screen"></div>
         <div className="fixed w-full px-4 py-24 z-50">
           <div className="max-w-[450px] h-[600px] mx-auto text-gray-500 ">
             <div className="max-w-[320px] mx-auto py-16">
-              <h1 className="text-3xl font-bold">Sign Up</h1>
-              <form
-                onSubmit={handleSubmit}
-                className="w-full flex flex-col py-4"
-              >
+              <h1 className="text-3xl font-bold">Login</h1>
+              <form className="w-full flex flex-col py-4">
                 <input
-                  value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   className="p-3 my-2 bg-gray-700 rouded"
                   type="email"
+                  value={email}
                   placeholder="Email"
                   autoComplete="email"
                 />
@@ -61,7 +46,7 @@ console.log(user)
 
                 <Link to="/dashboard">
                   <button className="bg-green-600 w-full text-white py-3 my-6 rounded font-bold">
-                    Sign Up
+                    Login
                   </button>
                 </Link>
 
@@ -74,9 +59,9 @@ console.log(user)
                 </div>
                 <p className="py-8">
                   <span className="text-gray-600">
-                    Already subscribed to <span className="text-green-700">Shara?</span>
-                  </span>{" "}
-                  <Link to="/login">Login</Link>
+                    Not on<span className="text-green-700">TreasuredTrash?</span> 
+                  </span>
+                  <Link to="/signin">Sign in</Link>
                 </p>
               </form>
             </div>
@@ -86,4 +71,9 @@ console.log(user)
   );
 };
 
-export default Signup;
+export default Login;
+
+
+
+
+

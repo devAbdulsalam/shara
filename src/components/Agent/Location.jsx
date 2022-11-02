@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Amount = () => {
+const Location = () => {
   return (
     <div>
       
@@ -8,4 +8,4 @@ const Amount = () => {
   )
 }
 
-export default Amount
+export default Location

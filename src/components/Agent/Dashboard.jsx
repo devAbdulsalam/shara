@@ -77,6 +77,24 @@ const Dashboard = () => {
               <p className="font-bold text-sm leading-tight">Calculate</p>
             </div>
           </a>
+          <a href="./climate">
+            <div className="bg-white rounded-lg text-[#16a34a] p-2 space-y-5 shadow-lg">
+              <div className="">
+                <svg
+                  width="35"
+                  height="40"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 448 512"
+                >
+                  <path
+                    d="M349.4 44.6c5.9-13.7 1.5-29.7-10.6-38.5s-28.6-8-39.9 1.8l-256 224c-10 8.8-13.6 22.9-8.9 35.3S50.7 288 64 288H175.5L98.6 467.4c-5.9 13.7-1.5 29.7 10.6 38.5s28.6 8 39.9-1.8l256-224c10-8.8 13.6-22.9 8.9-35.3s-16.6-20.7-30-20.7H272.5L349.4 44.6z"
+                    fill="#16a34a"
+                  />
+                </svg>
+              </div>
+              <p className="font-bold text-sm leading-tight">Climate Update</p>
+            </div>
+          </a>
           <a href="./profile">
             <div className="bg-white rounded-lg text-[#16a34a] p-4 space-y-5 shadow-lg">
               <div className="">
@@ -93,24 +111,6 @@ const Dashboard = () => {
                 </svg>
               </div>
               <p className="font-bold text-sm leading-tight">My profile</p>
-            </div>
-          </a>          
-          <a href="./wallet">
-            <div className="bg-white rounded-lg text-[#16a34a] p-4 space-y-5 shadow-lg">
-              <div className="">
-                <svg
-                  width="35"
-                  height="40"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512"
-                >
-                  <path
-                    d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V192c0-35.3-28.7-64-64-64H80c-8.8 0-16-7.2-16-16s7.2-16 16-16H448c17.7 0 32-14.3 32-32s-14.3-32-32-32H64zM416 336c-17.7 0-32-14.3-32-32s14.3-32 32-32s32 14.3 32 32s-14.3 32-32 32z"
-                    fill="#16a34a"
-                  />
-                </svg>
-              </div>
-              <p className="font-bold text-sm leading-tight">Wallet</p>
             </div>
           </a>
           <a href="./chat">
@@ -148,23 +148,23 @@ const Dashboard = () => {
               </div>
               <p className="font-bold text-sm leading-tight">Tips</p>
             </div>
-          </a>          
-          <a href="./climate">
-            <div className="bg-white rounded-lg text-[#16a34a] p-2 space-y-5 shadow-lg">
+          </a>
+          <a href="./wallet">
+            <div className="bg-white rounded-lg text-[#16a34a] p-4 space-y-5 shadow-lg">
               <div className="">
                 <svg
                   width="35"
                   height="40"
                   xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 448 512"
+                  viewBox="0 0 512 512"
                 >
                   <path
-                    d="M349.4 44.6c5.9-13.7 1.5-29.7-10.6-38.5s-28.6-8-39.9 1.8l-256 224c-10 8.8-13.6 22.9-8.9 35.3S50.7 288 64 288H175.5L98.6 467.4c-5.9 13.7-1.5 29.7 10.6 38.5s28.6 8 39.9-1.8l256-224c10-8.8 13.6-22.9 8.9-35.3s-16.6-20.7-30-20.7H272.5L349.4 44.6z"
+                    d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V192c0-35.3-28.7-64-64-64H80c-8.8 0-16-7.2-16-16s7.2-16 16-16H448c17.7 0 32-14.3 32-32s-14.3-32-32-32H64zM416 336c-17.7 0-32-14.3-32-32s14.3-32 32-32s32 14.3 32 32s-14.3 32-32 32z"
                     fill="#16a34a"
                   />
                 </svg>
               </div>
-              <p className="font-bold text-sm leading-tight">Climate Update</p>
+              <p className="font-bold text-sm leading-tight">Wallet</p>
             </div>
           </a>
         </div>

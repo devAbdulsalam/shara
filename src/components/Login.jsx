@@ -12,7 +12,7 @@ const Login = () => {
           <nav className="border-gray-200 py-2.5">
             <div className="flex flex-wrap items-center justify-between max-w-screen-xl px-4 mx-auto">
               <div className="flex items-center justify-center w-full h-5 mt-3">
-                <h1 className="text-xl text-green-700">Treasured Trash</h1>
+                <h1 className="text-xl text-green-700">Shara</h1>
               </div>
             </div>
           </nav>
@@ -59,7 +59,7 @@ const Login = () => {
                 </div>
                 <p className="py-8">
                   <span className="text-gray-600">
-                    Not on<span className="text-green-700">TreasuredTrash?</span> 
+                    Not on <span className="text-green-700">Shara? </span> 
                   </span>
                   <Link to="/signin">Sign in</Link>
                 </p>

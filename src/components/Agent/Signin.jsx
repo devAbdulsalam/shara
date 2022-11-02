@@ -33,7 +33,7 @@ console.log(user)
           className="hidden sm:block absolute w-full h-full object-cover debug"
           src={TestiImage4} alt="hero"
         />
-        <div className="fixed top-0 left-0 w-full h-screen"></div>
+        <div className="bg-white fixed top-0 left-0 w-full h-screen"></div>
         <div className="fixed w-full px-4 py-24 z-50">
           <div className="max-w-[450px] h-[600px] mx-auto text-gray-500 ">
             <div className="max-w-[320px] mx-auto py-16">
@@ -74,7 +74,7 @@ console.log(user)
                 </div>
                 <p className="py-8">
                   <span className="text-gray-600">
-                    Already subscribed to <span className="text-green-700">Shara?</span>
+                    Already subscribed to <span className="text-green-700">TreasuredTrash?</span>?
                   </span>{" "}
                   <Link to="/login">Login</Link>
                 </p>

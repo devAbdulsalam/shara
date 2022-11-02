@@ -5,11 +5,11 @@ import {
   generalWRate,
   organicWRate,
   NonRWRate,
-} from "../Data";
+} from "../../Data";
 import Navbar from "./Navbar";
 
 
-const Despose = () => {
+const Calculate = () => {
   const [plasticWaste, setPlasticWaste] = useState("0");
   const [metalWaste, setMetalWaste] = useState("0");
   const [organicWaste, setOrganicWaste] = useState("0");
@@ -41,7 +41,7 @@ const Despose = () => {
   return (
     <div>
       <Navbar />
-      <div className="mt-14 w-full">
+      <div className="mt-14 py-8 mx-2 ">
         <div className="flex bg-white rounded-lg shadow-lg overflow-hidden justify-around gap-3 mx-auto min-w-sm lg:w-10/12">
           <div
             className="hidden lg:block lg:w-1/2 bg-cover"
@@ -190,15 +190,15 @@ const Despose = () => {
                 )}
               </div>
             </div>
-            <div className="pt-5 w-full mx-auto flex justify-between">
+            <div className="pt-5 w-full mx-auto flex justify-around">
               <a href="./dashboard">
                 <button className="bg-red-700 text-white font-bold py-4 px-8 hover:bg-red-500 rounded-xl">
                   Cancle
                 </button>
               </a>
-              <a href="./desposesent">
+              <a href="./pay">
                 <button className="bg-blue-700 text-white font-bold py-4 px-8 hover:bg-blue-500 rounded-xl">
-                  Continue
+                  Pay
                 </button>
               </a>
             </div>
@@ -209,4 +209,4 @@ const Despose = () => {
   );
 };
 
-export default Despose;
+export default Calculate;

@@ -29,7 +29,7 @@ const Dashboard = () => {
 
       <Navbar />
       <div className="h-36 bg-transparent rounded-b-[30%] px-7">
-        <Splide className="mt-16 p-3 bg-white" aria-label="myimges">
+        <Splide className="mt-16 p-3" aria-label="myimges">
           <SplideSlide>
             <img src={RecycleBin} alt="Img1" />
           </SplideSlide>
@@ -131,7 +131,7 @@ const Dashboard = () => {
               <p className="font-bold text-sm leading-tight">Tips</p>
             </div>
           </a>
-          <a href="./wallat">
+          <a href="./wallet">
             <div className="bg-white rounded-lg text-[#16a34a] p-4 space-y-5 shadow-lg">
               <div className="">
                 <svg

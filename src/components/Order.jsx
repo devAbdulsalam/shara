@@ -4,21 +4,25 @@ import {useNavigate } from "react-router-dom";
 const Order = () => { 
   const navigate = useNavigate()
   const [location, setLocation] = useState("");
+  const [userOrder, setUserOrder] = useState("");
   const [selectedwastes, setSelectedWastes] = useState([]) 
     const handleChange = (event) =>{
         const selectwaste = event.target.value
         const isChecked = event.target.checked;
           if(isChecked){
-              setSelectedWastes( prevWaste => ([...selectedwastes, selectwaste]));
+            setSelectedWastes( prevWaste => ([...selectedwastes, selectwaste]));
           }else{
-              let index = selectedwastes.indexOf(selectwaste);
-              selectedwastes.splice(index, 1);
-              setSelectedWastes([selectwaste ]);
+              setSelectedWastes(prevWaste => selectedwastes.filter((e) => e !== selectwaste));
             }
-        console.log(selectedwastes)
+          }
+
+    const handleSubmit = () =>{
+      console.log(selectedwastes)
+      if(location){
+        setUserOrder({location:location, waste : selectedwastes })
       }
-    const handleSubmit = () =>{  
-        navigate("/desposesent");
+      console.log(userOrder)
+      navigate("/desposesent");
     }
   return (
     <div>

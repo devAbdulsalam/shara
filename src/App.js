@@ -22,6 +22,8 @@ function App() {
         <Route path="/climate" exact element={<Climate />}></Route>
         <Route path="/order" exact element={<Order />}></Route>
         <Route path="/chat" exact element={<GreenChat />}></Route>
+
+        <Route path="/chat" exact element={<GreenChat />}></Route>
 			</Routes>
 	</BrowserRouter>
     </div>

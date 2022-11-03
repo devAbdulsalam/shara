@@ -52,7 +52,7 @@ const Calculate = () => {
           <div
             className="hidden lg:block lg:w-1/2 bg-cover"
             style={{
-              backgroundImage: `url('https://www.pexels.com/photo/piled-plastic-containers-6591429')`,
+              backgroundImage: `url('https://www.pexels.com/photo/piled-plastic-containers-6591429/')`,
             }}
           ></div>
           <div className="lg:max-w-lg my-5 px-3 flex flex-col justify-center text-center">
@@ -60,15 +60,15 @@ const Calculate = () => {
               <h2 className="text-2xl font-semibold text-gray-700 text-center p">
                 Select Your Waste
               </h2>
-              <p className="text-lg text-gray-600 text-center">
+              <p className="text-sm text-gray-600 text-center">
                 Green total balance means you would be paid and red means you
                 are to pay us for the service renderd
               </p>
             </div>
             <div className="py-3 ">
               <div className="">
-                    <div className="text-gray-700 md:block gap-2 bg-gray-200 rounded-b-[3rem]">
-                      <div onClick={() => showDesc("metal")} className="justify-center cursor-pointer text-gray-50 bg-gray-700 p-2 rounded-b-full flex text-xl gap-2 my-2 items-center">
+                    <div className="text-gray-700 md:block gap-2 bg-gray-200 rounded-xl">
+                      <div onClick={() => showDesc("metal")} className="justify-center cursor-pointer text-gray-50 bg-green-500 p-2 rounded-xl flex text-xl gap-2 my-2 items-center">
                         <h2 className="font-semibold">Metal Waste</h2>
                         <span className="">1KG = {metalWRate}$</span>
                       </div>
@@ -90,8 +90,8 @@ const Calculate = () => {
                      </div>
                     </div>
 
-                  <div className="text-blue-600 md:block gap-2 bg-gray-200 rounded-b-[3rem]">
-                  <div onClick={() => showDesc("plastic")} className="justify-center text-gray-50 cursor-pointer bg-blue-600 p-2 rounded-b-full flex text-xl gap-2 my-2 items-center">
+                  <div className="text-blue-600 md:block gap-2 bg-gray-200 rounded-xl">
+                  <div onClick={() => showDesc("plastic")} className="justify-center text-gray-50 cursor-pointer bg-green-500 p-2 rounded-xl flex text-xl gap-2 my-2 items-center">
                     <h2 className="font-semibold">Plastic Waste</h2>
                     <span className="">1KG = {plasticWRate}$</span>
                   </div>
@@ -113,8 +113,8 @@ const Calculate = () => {
                     </div>
                 </div>
 
-                <div className="text-green-600 md:block gap-2 bg-gray-200 rounded-b-[3rem]">
-                  <div onClick={() => showDesc("organic")} className="justify-center text-gray-50 cursor-pointer bg-green-600 p-2 rounded-b-full flex text-xl gap-2 my-2 items-center">
+                <div className="text-green-600 md:block gap-2 bg-gray-200 rounded-xl">
+                  <div onClick={() => showDesc("organic")} className="justify-center text-gray-50 cursor-pointer bg-green-500 p-2 rounded-xl flex text-xl gap-2 my-2 items-center">
                     <h2 className="font-semibold">Organic Waste</h2>
                     <span className="">1KG = {organicWRate}$</span>
                   </div>
@@ -135,8 +135,8 @@ const Calculate = () => {
                     </p>
                  </div>
                 </div>
-                <div className="text-yellow-600 md:block gap-2 bg-gray-200 rounded-b-[3rem]">
-                  <div onClick={() => showDesc("general")} className="justify-center text-gray-50 cursor-pointer bg-yellow-600 p-2 rounded-b-full flex text-xl gap-2 my-2 items-center">
+                <div className="text-yellow-600 md:block gap-2 bg-gray-200 rounded-xl">
+                  <div onClick={() => showDesc("general")} className="justify-center text-gray-50 cursor-pointer bg-green-500 p-2 rounded-xl flex text-xl gap-2 my-2 items-center">
                     <h2 className="font-semibold">General Waste</h2>
                     <span className=""> 1 KG = {generalWRate}$</span>
                   </div>
@@ -157,8 +157,8 @@ const Calculate = () => {
                     </p>
                  </div>
                 </div>
-                <div className="text-red-600 md:block gap-2 bg-gray-200 rounded-b-[3rem]">
-                  <div onClick={() => showDesc("material")} className="justify-center text-gray-50 cursor-pointer bg-red-600 p-2 rounded-b-full flex text-xl gap-2 my-2 items-center">
+                <div className="text-red-600 md:block gap-2 bg-gray-200 rounded-xl">
+                  <div onClick={() => showDesc("material")} className="justify-center text-gray-50 cursor-pointer bg-green-500 p-2 rounded-xl flex text-xl gap-2 my-2 items-center">
                     <h2 className="font-semibold">Material Waste</h2>
                     <span className="">1KG = {NonRWRate}$</span>
                   </div>
@@ -198,11 +198,11 @@ const Calculate = () => {
             </div>
             <div className="pt-5 w-full mx-auto flex justify-around">
               <a href="./dashboard">
-                <button className="bg-red-700 text-white font-bold py-4 px-8 hover:bg-red-500 rounded-xl">
+                <button className="bg-red-600 text-white font-bold py-4 px-8 hover:bg-red-500 rounded-xl">
                   Cancle
                 </button>
               </a>
-                <button onClick={handlePay} className="bg-blue-700 min-w-36 text-white font-bold py-4 px-8 hover:bg-blue-500 rounded-xl">
+                <button onClick={handlePay} className="bg-blue-600 min-w-36 text-white font-bold py-4 px-8 hover:bg-blue-500 rounded-xl">
                   Pay
                 </button>
             </div>

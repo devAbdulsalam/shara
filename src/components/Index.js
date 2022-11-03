@@ -13,3 +13,4 @@ export { default as Pay } from './Pay';
 export { default as Climate } from './Climate';
 export { default as Order } from './Order';
 export { default as GreenChat } from './GreenChat';
+export { default as Dash } from './Dashboard2';

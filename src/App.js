@@ -1,6 +1,6 @@
 import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { Dashboard, Calculate, DesposeSent, Location, Notification, WasteInfo, Wallet, Pay, Receive, Profile, Welcome, Order, Home, Climate, GreenChat,} from './components/Index';
+import { Dashboard, Calculate, DesposeSent, Location, Notification, WasteInfo, Wallet, Pay, Receive, Profile, Welcome, Order, Home, Climate, GreenChat, Dash} from './components/Index';
 
 function App() {
   return (
@@ -23,7 +23,7 @@ function App() {
         <Route path="/order" exact element={<Order />}></Route>
         <Route path="/chat" exact element={<GreenChat />}></Route>
 
-        <Route path="/chat" exact element={<GreenChat />}></Route>
+        <Route path="/dash" exact element={<Dash />}></Route>
 			</Routes>
 	</BrowserRouter>
     </div>

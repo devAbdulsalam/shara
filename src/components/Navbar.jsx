@@ -24,7 +24,7 @@ const Navbar = () => {
                 <img src={UserImg} alt="" className="w-14 h-14 rounded-full" />
                 <div className="p-1 text-green-500">
                   <h5 className="text-lg font-bold">John Doe</h5>
-                  <p className="text-sm">Balance: $ 150.0</p>
+                  <p className="text-sm">Bal:&#8358; 18,420.81</p>
                 </div>
               </div>
               <hr className="bg-black"/>

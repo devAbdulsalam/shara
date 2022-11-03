@@ -58,8 +58,8 @@ const Pay = () => {
             <input type="number" 
               className="px-3 py-1.5 text-lg w-full font-normal text-gray-500 bg-clip-padding border-0 border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
               value={walletNumber} onChange={(e) => setWalletNumber(e.target.value)}  />
-            <h5 className='font-semibold text-lg mt-2'>Wallet Name</h5>
             <p className={`text-lg text-red-500 ${alert}`}>Invalid Wallet Number</p>
+            <h5 className='font-semibold text-lg mt-2'>Wallet Name</h5>
             <input type="text" disabled
               className="px-3 py-1.5 text-lg w-full font-normal text-gray-500 bg-clip-padding border-0 border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
               value={walletName} />
@@ -75,7 +75,7 @@ const Pay = () => {
           <div className='absolute w-full h-full top-0 flex place-items-center duration-500'>
             <div className='text-center text-lg bg-green-50 w-10/12 p-4 mx-auto rounded-md shadow-md'>
               <h5 className='font-semibold text-lg mt-2'>Confirm payment</h5>
-              <p>You are about to send #{amount} to {walletName}</p>
+              <p className='my-1 p-0'>You are about to send {amount}&#8358; to {walletName}</p>
               <button className='bg-red-500 px-8 text-white py-2 mt-2 mx-2 hover:bg-red-400 rounded-md' onClick={() => navigate('/dashboard')}>Cancel</button>
               <button className='bg-green-500 px-8 text-white py-2 mt-2 mx-2 hover:bg-green-400 rounded-md' onClick={handlePayment}>Confirm</button>
             </div>
@@ -98,7 +98,9 @@ const Pay = () => {
          {showModal ?
           <div className='absolute w-full h-full top-0 flex place-items-center duration-500'>
             <div className='text-center text-lg bg-green-50 w-72 p-4 mx-auto rounded-md shadow-md'>
-              <ion-icon name="happy" size="large"></ion-icon>
+              <div className='text-yellow-300'>
+                <ion-icon name="happy" size="large" ></ion-icon>
+              </div>
               <p className='p-2'>Payment sucessfull</p>
               <button className='bg-green-500 px-8 text-white py-2 mt-2 hover:bg-green-400 rounded-md' onClick={() => navigate('/dashboard')}>Ok</button>
             </div>

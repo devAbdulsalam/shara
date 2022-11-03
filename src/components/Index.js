@@ -1,5 +1,5 @@
 export { default as Home } from './Home';
-export { default as Dashboard } from './euirui';
+export { default as Dashboard } from './Dashboard';
 export { default as Calculate } from './Calculate';
 export { default as DesposeSent } from './DesposeSent';
 export { default as Profile } from './Profile';

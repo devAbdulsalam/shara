@@ -67,10 +67,10 @@ const Order = () => {
 
 export default Order
 
-{/* <h2 className="text-2xl px-2 font-semibold ">Enter Your Location</h2>
+/* <h2 className="text-2xl px-2 font-semibold ">Enter Your Location</h2>
     <div className="justify-center flex flex-col px-2 gap-2 my-2 items-center">
       <input type="text" id=""
         className="px-3 py-2 text-xl w-full font-normal text-gray-500 bg-clip-padding border-0 border-b-2 border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
         value={location} onChange={(e) => setLocation(e.target.value)}
       />
-    </div> */}
+    </div> */

@@ -198,11 +198,11 @@ const Calculate = () => {
             </div>
             <div className="pt-5 w-full mx-auto flex justify-around">
               <a href="./dashboard">
-                <button className="bg-red-600 text-white font-bold py-4 px-8 hover:bg-red-500 rounded-xl">
+                <button className="bg-red-600 text-white font-bold py-3 px-12 hover:bg-red-500 rounded-full">
                   Cancle
                 </button>
               </a>
-                <button onClick={handlePay} className="bg-blue-600 min-w-36 text-white font-bold py-4 px-8 hover:bg-blue-500 rounded-xl">
+                <button onClick={handlePay} className="bg-blue-600 min-w-36 text-white font-bold py-3 px-16 hover:bg-blue-500 rounded-full">
                   Pay
                 </button>
             </div>

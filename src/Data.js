@@ -3,7 +3,7 @@ export const menuLinks = [
     { name: "Order", link: "./order", icon : "trash-bin"},
     { name: "Wallet", link: "./wallet", icon : "wallet"},
     { name: "Profile", link: "./profile", icon : "person"},
-    { name: "Setting", link: "#", icon : "settings"},
+    // { name: "Setting", link: "#", icon : "settings"},
     { name: "About", link: "#", icon : "information-circle"},
     { name: "Logout", link: "./login", icon : "log-out"},
   ];

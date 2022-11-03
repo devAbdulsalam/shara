@@ -23,13 +23,13 @@ const Order = () => {
     <div>
       <Navbar />
       <div>
-      <div className='py-10 m-6'>
-        <div className="lg:max-w-2xl mx-auto my-5 p-5 flex flex-col justify-center bg-green-500 text-gray-50 rounded-xl">
+      <div className='py-10 m-6 h-screen flex place-items-center'>
+        <div className="lg:max-w-2xl mx-auto my-5 p-5 flex flex-col justify-center bg-white text-gray-800  rounded-xl">
             <div className="mx-auto text-center">
               <h2 className="text-2xl font-semibold text-center">
-                Select the Type of Waste
+                Select your type of Waste
               </h2>
-              <p className="text-lg text-center">
+              <p className="text-lg text-center m-2">
                 You can select multiple option
               </p>
             </div>
@@ -50,11 +50,11 @@ const Order = () => {
               </div>
               <div className="pt-5 w-full mx-auto flex justify-between">
                 <a href="./dashboard">
-                  <button className="bg-red-700 text-white font-bold py-4 px-8 hover:bg-red-500 rounded-xl">
+                  <button className="bg-red-700 text-white font-bold py-2 px-8 hover:bg-red-500 rounded-md">
                     Cancle
                   </button>
                 </a>
-                <button onClick={handleSubmit} className="bg-blue-700 text-white font-bold py-4 px-8 hover:bg-blue-500 rounded-xl">
+                <button onClick={handleSubmit} className="bg-blue-700 text-white font-bold py-2 px-8 hover:bg-blue-500 rounded-md">
                   Submit
                 </button>
             </div> 

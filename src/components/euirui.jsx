@@ -43,7 +43,7 @@ const Dashboard = () => {
           </a>
 
           <a href="./calculate">
-            <div className="bg-white rounded-lg text-[#16a34a] p-2 space-y-5 shadow-lg">
+            <div className="bg-white rounded-lg text-[#16a34a] hover:bg-green-200 p-2 space-y-5 shadow-lg">
               <div className="">
                   <svg xmlns="http://www.w3.org/2000/svg" 
                   width="35"
@@ -59,7 +59,7 @@ const Dashboard = () => {
             </div>
           </a>
           <a href="./profile">
-            <div className="bg-white rounded-lg text-[#16a34a] p-4 space-y-2 shadow-lg">
+            <div className="bg-white rounded-lg text-[#16a34a] hover:bg-green-200 p-4 space-y-2 shadow-lg">
               <div className="">
                 <svg
                   width="70"
@@ -77,7 +77,7 @@ const Dashboard = () => {
             </div>
           </a>          
           <a href="./wallet">
-            <div className="bg-white rounded-lg text-[#16a34a] p-4 space-y-5 shadow-lg">
+            <div className="bg-white rounded-lg text-[#16a34a] hover:bg-green-200  p-4 space-y-5 shadow-lg">
               <div className="">
                 <svg
                   width="35"
@@ -95,7 +95,7 @@ const Dashboard = () => {
             </div>
           </a>
           <a href="./wasteinfo">
-            <div className="bg-white rounded-lg text-[#16a34a] p-4 space-y-5 shadow-lg">
+            <div className="bg-white rounded-lg text-[#16a34a] hover:bg-green-200  p-4 space-y-5 shadow-lg">
               <div className="">
                 <svg
                   width="35"
@@ -113,7 +113,7 @@ const Dashboard = () => {
             </div>
           </a>          
           <a href="./climate">
-            <div className="bg-white rounded-lg text-[#16a34a] p-2 space-y-5 shadow-lg">
+            <div className="bg-white rounded-lg text-[#16a34a] hover:bg-green-200  p-2 space-y-5 shadow-lg">
               <div className="">
                 <svg
                   width="35"

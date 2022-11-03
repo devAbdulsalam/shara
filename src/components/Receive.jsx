@@ -46,8 +46,8 @@ const Receive = () => {
                 </a>
                 <a href="./wallet">
                     <div className="bg-white rounded-lg  p-4 space-y-2 shadow-sm">
-                        <div className='text-green-500'>
-                            <ion-icon name="card-outline" size="large" className="text-green-400 shadow-sm m-1"></ion-icon>
+                        <div className='text-blue-500 shadow-lg'>
+                            <ion-icon name="card-outline" size="large" className="text-green-400"></ion-icon>
                         </div>
                         <h5 className='font-semibold text-lg text-green-400'>Bank Account</h5>
                         <p className=''>Fund with your bound back account</p>

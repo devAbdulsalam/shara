@@ -47,9 +47,13 @@ const MapContainer = () => {
                 type="text"
                 id="search_input"
                 placeholder="Location"
-              />
+              /> 
+
+            <a href="/order">
+              <i class="fa-solid fa-paper-plane cursor-pointer pt-4 mr-6 text-green-500"></i>
+              </a>
             </div>
-          <a href="#" className="block py-4">
+          {/* <a href="#" className="block py-4">
             <div className="flex space-x-4">
               <div className="relative flex-shrink-0">
                 <span className="z-10 inline-block p-2 overflow-visible rounded-full bg-primary text-primary">
@@ -100,7 +104,7 @@ const MapContainer = () => {
                 </p>
               </div>
             </div>
-          </a>
+          </a> */}
         </div>
       </div>
       <img src={Map} className="w-full h-screen" alt="map" />

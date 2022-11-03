@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import{useNavigate } from 'react-router-dom'
 import {
   plasticWRate,
   metalWRate,
@@ -8,8 +9,8 @@ import {
 } from "../Data";
 import Navbar from "./Navbar";
 
-
 const Calculate = () => {
+  const navigate = useNavigate()
   const [plasticWaste, setPlasticWaste] = useState("0");
   const [metalWaste, setMetalWaste] = useState("0");
   const [organicWaste, setOrganicWaste] = useState("0");
@@ -38,6 +39,11 @@ const Calculate = () => {
         NonRecycleWprice
     );
   };
+  const handlePay = () =>{
+  if(total < 0){
+    navigate(`/pay/${total.toString().substring(1)}`)
+  }
+}
   return (
     <div>
       <Navbar />
@@ -196,11 +202,9 @@ const Calculate = () => {
                   Cancle
                 </button>
               </a>
-              <a href="./pay">
-                <button className="bg-blue-700 text-white font-bold py-4 px-8 hover:bg-blue-500 rounded-xl">
+                <button onClick={handlePay} className="bg-blue-700 min-w-36 text-white font-bold py-4 px-8 hover:bg-blue-500 rounded-xl">
                   Pay
                 </button>
-              </a>
             </div>
           </div>
         </div>

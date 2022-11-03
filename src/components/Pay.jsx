@@ -1,23 +1,51 @@
-import React, {useState, useEffect} from 'react'
-import { useNavigate } from 'react-router-dom'
+import React, {useState, useEffect, useCallback} from 'react'
+import { useNavigate, useParams } from 'react-router-dom'
 import Navbar from './Navbar'
 
 const Pay = () => {
-  const navigate = useNavigate()
+  const navigate = useNavigate()  
+  const {amount}  = useParams()
   const [walletNumber, setWalletNumber] = useState('')
-  const [walletName, setWalletName] = useState("Tanko Mike")
-  const [amount, setAmount] = useState('')
+  const [walletName, setWalletName] = useState('')
+  // const [amount, setAmount] = useState('')
+  const [confirmPin, setConfirmPin] = useState(false)
   const [showModal, setShowModal] = useState(false)
+  const [confirmPayment, setConfirmPayment] = useState(false)
+  const [alert, setAlert] = useState('invisible')
   const [payment, setPayment] = useState('')
+  const [pin, setPin] = useState('')
+  const confirmWallet = useCallback(() => {
+    console.log(typeof walletNumber)
+    if(walletNumber === "0123456789"){
+        setWalletName("Tanko Mike")
+      }
+  }, [walletNumber])
     useEffect(() => {
-      setPayment({walletNumber, walletName, amount})
-    }, [walletNumber, walletName, amount])
+      confirmWallet()
+      setPayment({walletNumber, walletName})
+    }, [walletNumber, walletName, confirmWallet])
     
   const handleSubmit = (e)=>{
     e.preventDefault();
-    if (walletNumber && walletName && amount) {
+    if (walletNumber === "") {
+      setAlert("visible")
+        setTimeout(() => {
+          setAlert('invisible')
+        }, 2000);
+    }else{
+      setConfirmPayment(true)
       console.log(payment)
+    }
+  }
+  const handlePayment = ()=>{
+    setConfirmPin(true)
+    setConfirmPayment(false)
+  }
+  const handlePin = ()=>{
+    if (pin) {
+      console.log(pin)
       setShowModal(true)
+      setConfirmPin(false)
     }
   }
   return (
@@ -27,26 +55,51 @@ const Pay = () => {
           <h3 className='text-center text-2xl font-semibold m-4'>Pay</h3>
           <form onSubmit={handleSubmit}>
             <h5 className='font-semibold text-lg'>Enter Wallet Number</h5>
-            <input type="number"
+            <input type="number" 
               className="px-3 py-1.5 text-lg w-full font-normal text-gray-500 bg-clip-padding border-0 border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
               value={walletNumber} onChange={(e) => setWalletNumber(e.target.value)}  />
             <h5 className='font-semibold text-lg mt-2'>Wallet Name</h5>
-            <input type="text"
+            <p className={`text-lg text-red-500 ${alert}`}>Invalid Wallet Number</p>
+            <input type="text" disabled
               className="px-3 py-1.5 text-lg w-full font-normal text-gray-500 bg-clip-padding border-0 border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
-              value={walletName} onChange={(e) => setWalletName(e.target.value)}  />
+              value={walletName} />
             <h5 className='font-semibold text-lg mt-2'>Amount</h5>          
-            <input type="number"                           
+            <input type="number"   disabled                           
               className="px-3 py-1.5 text-lg w-full font-normal text-gray-500 bg-clip-padding border-0 border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
-              value={amount} onChange={(e) => setAmount(e.target.value)} />
+              value={amount}/>
               <div className='mt-2'>
                 <button className="button" type='submit'>Pay</button>
               </div>
          </form>
+         {confirmPayment ?
+          <div className='absolute w-full h-full top-0 flex place-items-center duration-500'>
+            <div className='text-center text-lg bg-green-50 w-10/12 p-4 mx-auto rounded-md shadow-md'>
+              <h5 className='font-semibold text-lg mt-2'>Confirm payment</h5>
+              <p>You are about to send #{amount} to {walletName}</p>
+              <button className='bg-red-500 px-8 text-white py-2 mt-2 mx-2 hover:bg-red-400 rounded-md' onClick={() => navigate('/dashboard')}>Cancel</button>
+              <button className='bg-green-500 px-8 text-white py-2 mt-2 mx-2 hover:bg-green-400 rounded-md' onClick={handlePayment}>Confirm</button>
+            </div>
+          </div>
+          : ""
+          }
+         {confirmPin ?
+          <div className='absolute w-full h-full top-0 flex place-items-center duration-500'>
+            <div className='text-center text-lg bg-green-50 w-72 p-4 mx-auto rounded-md shadow-md'>
+              <h5 className='font-semibold text-lg mt-2'>Input Your Pin</h5>
+               <input type="number" max="4"                          
+              className="px-3 py-1.5 text-lg w-full font-normal text-gray-500 bg-clip-padding border-0 border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+              value={pin} onChange={(e) => setPin(e.target.value)} />
+              <p className={`text-lg text-red-500 ${alert}`}>Pin is not correct</p>
+              <button className='bg-green-500 px-8 text-white py-2 mt-2 hover:bg-green-400 rounded-md' onClick={handlePin}>Ok</button>
+            </div>
+          </div>
+          : ""
+          }
          {showModal ?
           <div className='absolute w-full h-full top-0 flex place-items-center duration-500'>
-            <div className='text-center text-lg bg-white w-72 p-4 mx-auto rounded-md shadow-md'>
-              <ion-icon name="good" size="large"></ion-icon>
-              <p className='p-2'>payment sucessfull</p>
+            <div className='text-center text-lg bg-green-50 w-72 p-4 mx-auto rounded-md shadow-md'>
+              <ion-icon name="happy" size="large"></ion-icon>
+              <p className='p-2'>Payment sucessfull</p>
               <button className='bg-green-500 px-8 text-white py-2 mt-2 hover:bg-green-400 rounded-md' onClick={() => navigate('/dashboard')}>Ok</button>
             </div>
           </div>

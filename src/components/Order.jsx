@@ -22,11 +22,11 @@ const Order = () => {
   //       navigate("/desposesent");
   //   }
   return (
-    
     <div>
       <Navbar />
       <MapContainer />
-      <img src="https://www.pexels.com/photo/recyclable-plastic-bottles-in-tote-bags-7772006/" class="w-screen h-screen portrait:w-10" alt="" />
+      <img src="https://www.pexels.com/photo/recyclable-plastic-bottles-in-tote-bags-7772006/" 
+        class="w-screen h-screen portrait:w-10" alt="" />
       {/* <div className='py-10 m-6'>
         <div className="lg:max-w-2xl mx-auto my-5 p-5 flex flex-col justify-center bg-green-500 text-gray-50 rounded-xl">
             <div className="mx-auto text-center">

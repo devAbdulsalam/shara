@@ -17,7 +17,6 @@ const MapContainer = () => {
       />
       <div className="rounded-3xl  bg-gray-200 p-1 w-full shadow-2xl shadow-inner:shadow-md bottom-0 fixed space-y-5 transition-all duration-50">
         <div className="mx-2 my-2 font-poppins">
-          <a href="./input.html">
             <div
               className="flex justify-between rounded-full bg-white mx-1 shadow-lg"
               onclick="openslideMenu()"
@@ -50,7 +49,6 @@ const MapContainer = () => {
                 placeholder="Location"
               />
             </div>
-          </a>
           <a href="#" className="block py-4">
             <div className="flex space-x-4">
               <div className="relative flex-shrink-0">

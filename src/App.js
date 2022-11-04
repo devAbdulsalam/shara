@@ -2,6 +2,7 @@ import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Dashboard, Calculate, DesposeSent, Location, Notification, WasteInfo, Wallet, Pay, Receive, Withdraw, Profile, Welcome, Order, Home, Climate, GreenChat, Dash} from './components/Index';
 
+
 function App() {
   return (
     <div className="bg-green-50 min-h-screen">
@@ -24,6 +25,7 @@ function App() {
         <Route path="/order" exact element={<Order />}></Route>
         <Route path="/chat" exact element={<GreenChat />}></Route>
         <Route path="/dash" exact element={<Dash />}></Route>
+
 			</Routes>
 	</BrowserRouter>
     </div>

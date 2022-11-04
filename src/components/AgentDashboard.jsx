@@ -24,7 +24,7 @@ const AgentDashboard = () => {
       </div>
       <div className="mt-10 md:mx-32 mx-5 py-5">
         <div className="grid grid-cols-2 gap-x-4 gap-y-6">
-          <a href="./location">
+          <a href="./alocation">
             <div className="bg-[#228e01] rounded-lg text-white p-2 space-y-3 shadow-lg">
               <div className="">
                 <svg
@@ -41,11 +41,11 @@ const AgentDashboard = () => {
                   ></path>
                 </svg>
               </div>
-              <p className="font-bold text-lg leading-tight">Sell Waste</p>
+              <p className="font-bold text-lg leading-tight">View Request</p>
             </div>
           </a>
 
-          <a href="./calculate">
+          <a href="./acalculate">
             <div className="bg-white rounded-lg text-[#228e01] hover:bg-green-200 p-2 space-y-3 shadow-lg">
               <div className="">
                 <svg
@@ -65,7 +65,7 @@ const AgentDashboard = () => {
               </p>
             </div>
           </a>
-          <a href="./profile">
+          <a href="./aprofile">
             <div className="bg-white rounded-lg text-[#228e01] hover:bg-green-200 p-4 space-y-2 shadow-lg">
               <div className="">
                 <svg
@@ -83,7 +83,7 @@ const AgentDashboard = () => {
               <p className="font-bold text-lg leading-tight">My profile</p>
             </div>
           </a>
-          <a href="./wallet">
+          <a href="./awallet">
             <div className="bg-white rounded-lg text-[#228e01] hover:bg-green-200  p-4 space-y-2 shadow-lg">
               <div className="">
                 <svg

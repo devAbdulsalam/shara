@@ -15,3 +15,7 @@ export { default as Climate } from './Climate';
 export { default as Order } from './Order';
 export { default as GreenChat } from './GreenChat';
 export { default as AgentDashboard } from './AgentDashboard';
+export { default as ANotification } from './ANotification';
+export { default as ALocation } from './ALocation';
+export { default as AWallet } from './AWallet';
+export { default as AOrder } from './AOrder';

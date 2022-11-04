@@ -81,7 +81,7 @@ const Calculate = () => {
             <div className="py-3 ">
               <div className="">
                     <div className="text-gray-700 md:block gap-2 bg-gray-200 rounded-xl">
-                      <div onClick={() => showDesc("metal")} className="justify-center cursor-pointer text-gray-50 bg-green-500 p-2 rounded-xl flex text-xl gap-2 my-2 items-center">
+                      <div onClick={() => showDesc("metal")} className="justify-center cursor-pointer text-gray-50 bg-gray-500 p-2 rounded-xl flex text-xl gap-2 my-2 items-center">
                         <h2 className="font-semibold">Metal Waste</h2>
                         <span className="">1KG = {metalWRate}&#8358;</span>
                       </div>
@@ -103,7 +103,7 @@ const Calculate = () => {
                     </div>
 
                   <div className="text-blue-600 md:block gap-2 bg-gray-200 rounded-xl">
-                  <div onClick={() => showDesc("plastic")} className="justify-center text-gray-50 cursor-pointer bg-green-500 p-2 rounded-xl flex text-xl gap-2 my-2 items-center">
+                  <div onClick={() => showDesc("plastic")} className="justify-center text-gray-50 cursor-pointer bg-gray-500 p-2 rounded-xl flex text-xl gap-2 my-2 items-center">
                     <h2 className="font-semibold">Plastic Waste</h2>
                     <span className="">1KG = {plasticWRate}&#8358;</span>
                   </div>
@@ -125,7 +125,7 @@ const Calculate = () => {
                 </div>
 
                 <div className="text-green-600 md:block gap-2 bg-gray-200 rounded-xl">
-                  <div onClick={() => showDesc("organic")} className="justify-center text-gray-50 cursor-pointer bg-green-500 p-2 rounded-xl flex text-xl gap-2 my-2 items-center">
+                  <div onClick={() => showDesc("organic")} className="justify-center text-gray-50 cursor-pointer bg-gray-500 p-2 rounded-xl flex text-xl gap-2 my-2 items-center">
                     <h2 className="font-semibold">Organic Waste</h2>
                     <span className="">1KG = {organicWRate}&#8358;</span>
                   </div>

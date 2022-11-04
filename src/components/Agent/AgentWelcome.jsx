@@ -16,7 +16,7 @@ const Welcome = () => {
             <img src={TestiImage3} alt="hero" />
           </div>
           <div class="mr-auto place-self-center lg:col-span-7 md:text-left text-center">
-            <h1 class="max-w-2xl mb-4 text-4xl font-extrabold leading-none tracking-tight md:text-5xl text-[#16a34a] xl:text-6xl dark:text-[#16a34a]">
+            <h1 class="max-w-2xl mb-4 text-4xl font-extrabold leading-none tracking-tight md:text-5xl text-[#228e01] xl:text-6xl dark:text-[#228e01]">
               A Clean and Wealth City for All
             </h1>
             <p class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">

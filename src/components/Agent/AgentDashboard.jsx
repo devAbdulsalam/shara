@@ -20,7 +20,7 @@ const Dashboard = () => {
             >
               <path
                 d="M17.75 16H24V13.3333H17.75V16ZM0 0V2.66667H7.75V0H0ZM0 9.33333H24V6.66667H0V9.33333Z"
-                fill="#16a34a"
+                fill="#228e01"
               />
             </svg>
           </div>
@@ -41,7 +41,7 @@ const Dashboard = () => {
       <div className="mt-10 md:mx-32 mx-5 py-5">
         <div className="grid grid-cols-2 gap-x-4 gap-y-6">
           <a href="./order">
-            <div className="bg-[#16a34a] rounded-lg text-white p-2 space-y-5 shadow-lg">
+            <div className="bg-[#228e01] rounded-lg text-white p-2 space-y-5 shadow-lg">
               <div className="">
                 <svg
                   width="35"
@@ -60,7 +60,7 @@ const Dashboard = () => {
           </a>
 
           <a href="./calculate">
-            <div className="bg-white rounded-lg text-[#16a34a] p-2 space-y-5 shadow-lg">
+            <div className="bg-white rounded-lg text-[#228e01] p-2 space-y-5 shadow-lg">
               <div className="">
                 <svg
                   width="35"
@@ -70,7 +70,7 @@ const Dashboard = () => {
                 >
                   <path
                     d="M349.4 44.6c5.9-13.7 1.5-29.7-10.6-38.5s-28.6-8-39.9 1.8l-256 224c-10 8.8-13.6 22.9-8.9 35.3S50.7 288 64 288H175.5L98.6 467.4c-5.9 13.7-1.5 29.7 10.6 38.5s28.6 8 39.9-1.8l256-224c10-8.8 13.6-22.9 8.9-35.3s-16.6-20.7-30-20.7H272.5L349.4 44.6z"
-                    fill="#16a34a"
+                    fill="#228e01"
                   />
                 </svg>
               </div>
@@ -78,7 +78,7 @@ const Dashboard = () => {
             </div>
           </a>
           <a href="./climate">
-            <div className="bg-white rounded-lg text-[#16a34a] p-2 space-y-5 shadow-lg">
+            <div className="bg-white rounded-lg text-[#228e01] p-2 space-y-5 shadow-lg">
               <div className="">
                 <svg
                   width="35"
@@ -88,7 +88,7 @@ const Dashboard = () => {
                 >
                   <path
                     d="M349.4 44.6c5.9-13.7 1.5-29.7-10.6-38.5s-28.6-8-39.9 1.8l-256 224c-10 8.8-13.6 22.9-8.9 35.3S50.7 288 64 288H175.5L98.6 467.4c-5.9 13.7-1.5 29.7 10.6 38.5s28.6 8 39.9-1.8l256-224c10-8.8 13.6-22.9 8.9-35.3s-16.6-20.7-30-20.7H272.5L349.4 44.6z"
-                    fill="#16a34a"
+                    fill="#228e01"
                   />
                 </svg>
               </div>
@@ -96,7 +96,7 @@ const Dashboard = () => {
             </div>
           </a>
           <a href="./profile">
-            <div className="bg-white rounded-lg text-[#16a34a] p-4 space-y-5 shadow-lg">
+            <div className="bg-white rounded-lg text-[#228e01] p-4 space-y-5 shadow-lg">
               <div className="">
                 <svg
                   width="35"
@@ -106,7 +106,7 @@ const Dashboard = () => {
                 >
                   <path
                     d="M512 32H64C28.65 32 0 60.65 0 96v320c0 35.35 28.65 64 64 64h448c35.35 0 64-28.65 64-64V96C576 60.65 547.3 32 512 32zM176 128c35.35 0 64 28.65 64 64s-28.65 64-64 64s-64-28.65-64-64S140.7 128 176 128zM272 384h-192C71.16 384 64 376.8 64 368C64 323.8 99.82 288 144 288h64c44.18 0 80 35.82 80 80C288 376.8 280.8 384 272 384zM496 320h-128C359.2 320 352 312.8 352 304S359.2 288 368 288h128C504.8 288 512 295.2 512 304S504.8 320 496 320zM496 256h-128C359.2 256 352 248.8 352 240S359.2 224 368 224h128C504.8 224 512 231.2 512 240S504.8 256 496 256zM496 192h-128C359.2 192 352 184.8 352 176S359.2 160 368 160h128C504.8 160 512 167.2 512 176S504.8 192 496 192z"
-                    fill="#16a34a"
+                    fill="#228e01"
                   />
                 </svg>
               </div>
@@ -114,7 +114,7 @@ const Dashboard = () => {
             </div>
           </a>
           <a href="./chat">
-            <div className="bg-white rounded-lg text-[#16a34a] p-4 space-y-5 shadow-lg">
+            <div className="bg-white rounded-lg text-[#228e01] p-4 space-y-5 shadow-lg">
               <div className="">
                 <svg
                   width="35"
@@ -124,7 +124,7 @@ const Dashboard = () => {
                 >
                   <path
                     d="M208 352c114.9 0 208-78.8 208-176S322.9 0 208 0S0 78.8 0 176c0 38.6 14.7 74.3 39.6 103.4c-3.5 9.4-8.7 17.7-14.2 24.7c-4.8 6.2-9.7 11-13.3 14.3c-1.8 1.6-3.3 2.9-4.3 3.7c-.5 .4-.9 .7-1.1 .8l-.2 .2 0 0 0 0C1 327.2-1.4 334.4 .8 340.9S9.1 352 16 352c21.8 0 43.8-5.6 62.1-12.5c9.2-3.5 17.8-7.4 25.3-11.4C134.1 343.3 169.8 352 208 352zM448 176c0 112.3-99.1 196.9-216.5 207C255.8 457.4 336.4 512 432 512c38.2 0 73.9-8.7 104.7-23.9c7.5 4 16 7.9 25.2 11.4c18.3 6.9 40.3 12.5 62.1 12.5c6.9 0 13.1-4.5 15.2-11.1c2.1-6.6-.2-13.8-5.8-17.9l0 0 0 0-.2-.2c-.2-.2-.6-.4-1.1-.8c-1-.8-2.5-2-4.3-3.7c-3.6-3.3-8.5-8.1-13.3-14.3c-5.5-7-10.7-15.4-14.2-24.7c24.9-29 39.6-64.7 39.6-103.4c0-92.8-84.9-168.9-192.6-175.5c.4 5.1 .6 10.3 .6 15.5z"
-                    fill="#16a34a"
+                    fill="#228e01"
                   />
                 </svg>
               </div>
@@ -132,7 +132,7 @@ const Dashboard = () => {
             </div>
           </a>
           <a href="./wasteinfo">
-            <div className="bg-white rounded-lg text-[#16a34a] p-4 space-y-5 shadow-lg">
+            <div className="bg-white rounded-lg text-[#228e01] p-4 space-y-5 shadow-lg">
               <div className="">
                 <svg
                   width="35"
@@ -142,7 +142,7 @@ const Dashboard = () => {
                 >
                   <path
                     d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM164.1 325.5C182 346.2 212.6 368 256 368s74-21.8 91.9-42.5c5.8-6.7 15.9-7.4 22.6-1.6s7.4 15.9 1.6 22.6C349.8 372.1 311.1 400 256 400s-93.8-27.9-116.1-53.5c-5.8-6.7-5.1-16.8 1.6-22.6s16.8-5.1 22.6 1.6zM208.4 208c0 17.7-14.3 32-32 32s-32-14.3-32-32s14.3-32 32-32s32 14.3 32 32zm92.4 25.6c-5.3 7.1-15.3 8.5-22.4 3.2s-8.5-15.3-3.2-22.4c30.4-40.5 91.2-40.5 121.6 0c5.3 7.1 3.9 17.1-3.2 22.4s-17.1 3.9-22.4-3.2c-17.6-23.5-52.8-23.5-70.4 0z"
-                    fill="#16a34a"
+                    fill="#228e01"
                   />
                 </svg>
               </div>
@@ -150,7 +150,7 @@ const Dashboard = () => {
             </div>
           </a>
           <a href="./wallet">
-            <div className="bg-white rounded-lg text-[#16a34a] p-4 space-y-5 shadow-lg">
+            <div className="bg-white rounded-lg text-[#228e01] p-4 space-y-5 shadow-lg">
               <div className="">
                 <svg
                   width="35"
@@ -160,7 +160,7 @@ const Dashboard = () => {
                 >
                   <path
                     d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V192c0-35.3-28.7-64-64-64H80c-8.8 0-16-7.2-16-16s7.2-16 16-16H448c17.7 0 32-14.3 32-32s-14.3-32-32-32H64zM416 336c-17.7 0-32-14.3-32-32s14.3-32 32-32s32 14.3 32 32s-14.3 32-32 32z"
-                    fill="#16a34a"
+                    fill="#228e01"
                   />
                 </svg>
               </div>

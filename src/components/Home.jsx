@@ -1,5 +1,5 @@
 import React, {useState, } from "react";
-// import loginImage from "../assets/Limage.png";
+import Logo from "../assets/logo.png";
 // import signinImage from "../assets/Simage.png";
 import {useNavigate } from "react-router-dom";
 
@@ -60,18 +60,18 @@ const toggleAlert = () =>{
   return (
     <div className="font-serif">
       <header className="w-full">
-        <nav className="border-gray-200 py-2.5">
+        <nav className="border-gray-200">
           <div className="flex flex-wrap items-center justify-between max-w-screen-xl px-4 mx-auto">
-            <div className="flex items-center justify-center w-full h-5 mt-3">
-              <h1 className="text-2xl text-green-700 font-semibold mt-2">Shara</h1>
+            <div className="flex items-center justify-center w-full h-5 mt-16">
+              <img className="w-32 mt-8" src={Logo} alt="" />
             </div>
           </div>
         </nav>
       </header>
       <section className="p-5 py-8 w-full">
           <div className="flex items-center justify-center space-x-5 w-full mt-20">
-              <button className={`font-semibold text-2xl rounded-full p-3  ${showSignUp ? 'border-b-4 border-green-600 text-green-600' : "text-green-500"}`} onClick={handleSignUp}>  <ion-icon name="log-in-outline"></ion-icon></button>
-              <button className={`text-2xl font-semibold ${showLogin ? 'border-b-4  border-green-600 text-green-600' : "text-green-500"}`} onClick={handleLogin}><ion-icon name="log-out-outline"></ion-icon></button>
+              <button className={`font-semibold text-3xl rounded-full p-3 shadow-xl bg-gray-100 justify-center flex flex-col  ${showSignUp ? 'border-b-4 border-green-600 text-green-600' : "text-green-700"}`} onClick={handleSignUp}>  <ion-icon name="log-in-outline"></ion-icon></button>
+              <button className={`font-semibold text-3xl rounded-full p-3 shadow-xl bg-gray-100 justify-center flex flex-col ${showLogin ? 'border-b-4  border-green-600 text-green-600' : "text-green-700"}`} onClick={handleLogin}><ion-icon name="person-add-outline"></ion-icon></button>
           </div>
           {showSignUp ?
           <div className="max-w-[320px] mx-auto py-4">
@@ -103,7 +103,7 @@ const toggleAlert = () =>{
                 />
                   <p className={`text-center text-lg text-red-500 duration-500 ${alert}`}>All inputs are required</p>
 
-                  <button type="submit" className="bg-green-600 w-full text-white py-3 my-6 rounded font-bold">
+                  <button type="submit" className="bg-[#228e01] w-full text-white py-3 my-6 rounded font-bold">
                     Sign in
                   </button>
 
@@ -142,7 +142,7 @@ const toggleAlert = () =>{
                 />
                 <p className={`text-center text-lg text-red-500 duration-500 ${alert}`}>All inputs are required</p>
 
-                  <button className="bg-green-600 w-full text-white py-3 my-6 rounded font-bold">
+                  <button className="bg-[#228e01] w-full text-white py-3 my-6 rounded font-bold">
                     Login
                   </button>
 

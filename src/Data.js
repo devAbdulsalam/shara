@@ -6,6 +6,14 @@ export const menuLinks = [
     { name: "About", link: "#", icon : "information-circle"},
     { name: "Logout", link: "./home", icon : "log-out"},
   ];
+export const agentmenuLinks = [
+    { name: "Home", link: "./adashboard", icon :"home" },
+    { name: "Order", link: "./alocation", icon : "trash-bin"},
+    { name: "Wallet", link: "./awallet", icon : "wallet"},
+    { name: "Profile", link: "./aprofile", icon : "person"},
+    { name: "About", link: "#", icon : "information-circle"},
+    { name: "Logout", link: "#", icon : "log-out"},
+  ];
 
 // // Wastes
 export const plasticWRate = 12

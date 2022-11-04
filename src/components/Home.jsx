@@ -1,13 +1,14 @@
 import React, {useState, } from "react";
 // import loginImage from "../assets/Limage.png";
 // import signinImage from "../assets/Simage.png";
-import { Link, useNavigate } from "react-router-dom";
+import {useNavigate } from "react-router-dom";
 
 const Home = () => {
   const navigate = useNavigate()
   // // toggle login and signUp
   const [showSignUp, setShowSignUp] = useState(true);
   const [showLogin, setShowLogin ] = useState(false);
+  const [alert, setAlert ] = useState("hidden");
   
   // // signUp
   const [phone, setPhoneNumber] = useState(''); 
@@ -18,11 +19,31 @@ const Home = () => {
   const [lphone, setlphone] = useState("");
   const [lpassword, setLPassword] = useState("");
 
-
+const toggleAlert = () =>{
+   setAlert("block")
+    setTimeout(() => {
+      setAlert('hidden')
+    }, 2000);
+  }
   
-  const handleSubmit = (e) => {
+  
+  const handleSignUpSubmit = (e) => {
     e.preventDefault();
-    console.log("error");
+    if(phone === "" || name === "" || password === ""){
+      toggleAlert()
+      setShowSignUp(true)
+    }else{
+      navigate('/dashboard')
+    }
+  };
+  const handleLoginSubmit = (e) => {
+    e.preventDefault();
+    if(lphone === "" || lpassword === ""){
+      toggleAlert()
+      setShowLogin(true)
+    }else{
+      navigate('/dashboard')
+    }
   };
 
   const handleSignUp = () =>{
@@ -55,7 +76,7 @@ const Home = () => {
           {showSignUp ?
           <div className="max-w-[320px] mx-auto py-4">
               <form className="w-full flex flex-col py-4" 
-                onSubmit={handleSubmit}>
+                onSubmit={handleSignUpSubmit}>
                 <input
                   onChange={(e) => setName(e.target.value)}
                   className="px-3 my-2 py-1.5 text-lg w-full font-normal text-gray-500 bg-clip-padding border-0 border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
@@ -68,7 +89,7 @@ const Home = () => {
                   value={phone}
                   onChange={(e) => setPhoneNumber(e.target.value)}
                   className="px-3 my-2 py-1.5 text-lg w-full font-normal text-gray-500 bg-clip-padding border-0 border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
-                  type="number"
+                  type="phone"
                   placeholder="Phone Number"
                   autoComplete="phone"
                 />
@@ -76,17 +97,15 @@ const Home = () => {
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                   className="px-3 my-2 py-1.5 text-lg w-full font-normal text-gray-500 bg-clip-padding border-0 border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
-
                   type="password"
                   placeholder="Password"
                   autoComplete="current-password"
                 />
+                  <p className={`text-center text-lg text-red-500 duration-500 ${alert}`}>All inputs are required</p>
 
-                <Link to="/dashboard">
-                  <button className="bg-green-600 w-full text-white py-3 my-6 rounded font-bold">
+                  <button type="submit" className="bg-green-600 w-full text-white py-3 my-6 rounded font-bold">
                     Sign in
                   </button>
-                </Link>
 
                 <div className="flex justify-between items-center text-sm text-gray-600">
                   <p>
@@ -103,7 +122,8 @@ const Home = () => {
             </div> : ""}
           {showLogin ?
           <div className="max-w-[320px] mx-auto py-4">
-              <form className="w-full flex flex-col py-4">
+              <form className="w-full flex flex-col py-4"
+              onSubmit={handleLoginSubmit}>
                 <input
                   onChange={(e) => setlphone(e.target.value)}
                  className="px-3 my-2 py-1.5 text-lg w-full font-normal text-gray-500 bg-clip-padding border-0 border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
@@ -120,12 +140,11 @@ const Home = () => {
                   placeholder="Password"
                   autoComplete="current-password"
                 />
+                <p className={`text-center text-lg text-red-500 duration-500 ${alert}`}>All inputs are required</p>
 
-                <Link to="/dashboard">
                   <button className="bg-green-600 w-full text-white py-3 my-6 rounded font-bold">
                     Login
                   </button>
-                </Link>
 
                 <div className="flex justify-between items-center text-sm text-gray-600">
                   <p>

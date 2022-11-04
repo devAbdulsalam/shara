@@ -24,30 +24,25 @@ const Dashboard = () => {
       <div className="mt-10 md:mx-32 mx-5 py-5">
         <div className="grid grid-cols-2 gap-x-4 gap-y-6">
           <a href="./location">
-            <div className="bg-[#16a34a] rounded-lg text-white p-2 space-y-5 shadow-lg">
+            <div className="bg-[#16a34a] rounded-lg text-white p-2 space-y-3 shadow-lg">
               <div className="">
-                <svg
-                  width="35"
-                  height="40"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 576 512"
-                >
-                  <path
-                    d="M206.7 45.1C224.2 17 255 0 288 0s63.8 17 81.3 45.1l38.6 61.7 27-15.6c8.4-4.9 18.9-4.2 26.6 1.7s11.1 15.9 8.6 25.3l-23.4 87.4c-3.4 12.8-16.6 20.4-29.4 17l-87.4-23.4c-9.4-2.5-16.3-10.4-17.6-20s3.4-19.1 11.8-23.9l28.4-16.4L315 79c-5.8-9.3-16-15-27-15s-21.2 5.7-27 15l-17.5 28c-9.2 14.8-28.6 19.5-43.6 10.5c-15.3-9.2-20.2-29.2-10.7-44.4l17.5-28zM461.5 251.9c15-9 34.4-4.3 43.6 10.5l24.4 39.1c9.4 15.1 14.4 32.4 14.6 50.2c.3 53.1-42.7 96.4-95.8 96.4L352 448v32c0 9.7-5.8 18.5-14.8 22.2s-19.3 1.7-26.2-5.2l-64-64c-9.4-9.4-9.4-24.6 0-33.9l64-64c6.9-6.9 17.2-8.9 26.2-5.2s14.8 12.5 14.8 22.2v32l96.2 0c17.6 0 31.9-14.4 31.8-32c0-5.9-1.7-11.7-4.8-16.7l-24.4-39.1c-9.5-15.2-4.7-35.2 10.7-44.4zm-364.6-31L68 204.2c-8.4-4.9-13.1-14.3-11.8-23.9s8.2-17.5 17.6-20l87.4-23.4c12.8-3.4 26 4.2 29.4 17L214 241.2c2.5 9.4-.9 19.3-8.6 25.3s-18.2 6.6-26.6 1.7l-26.5-15.3-51.5 82.4c-3.1 5-4.8 10.8-4.8 16.7c-.1 17.6 14.2 32 31.8 32l32.2 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-32.2 0c-53.1 0-96.1-43.2-95.8-96.4c.1-17.8 5.1-35.1 14.6-50.2l50.3-80.5z"
-                    fill="white"
-                  />
-                </svg>
-              </div>
-              <p className="font-bold text-sm leading-tight">Sell Waste</p>
+                <svg 
+                  width="50"
+                  height="55" 
+                  fill="white" 
+                  viewBox="0 0 20 20" 
+                  xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4 4a2 2 0 00-2 2v4a2 2 0 002 2V6h10a2 2 0 00-2-2H4zm2 6a2 2 0 012-2h8a2 2 0 012 2v4a2 2 0 01-2 2H8a2 2 0 01-2-2v-4zm6 4a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path></svg>
+                </div>
+              <p className="font-bold text-lg leading-tight">Sell Waste</p>
             </div>
           </a>
 
           <a href="./calculate">
-            <div className="bg-white rounded-lg text-[#16a34a] hover:bg-green-200 p-2 space-y-5 shadow-lg">
+            <div className="bg-white rounded-lg text-[#16a34a] hover:bg-green-200 p-2 space-y-3 shadow-lg">
               <div className="">
                   <svg xmlns="http://www.w3.org/2000/svg" 
-                  width="35"
-                  height="40"  
+                  width="50"
+                  height="55"  
                   fill="#16a34a" 
                   class="bi bi-calculator" 
                   viewBox="0 0 16 16">
@@ -55,15 +50,15 @@ const Dashboard = () => {
                   <path d="M4 2.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5v-2zm0 4a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm0 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm0 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm3-6a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm0 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm0 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm3-6a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm0 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-4z"/>
                 </svg>
               </div>
-              <p className="font-bold text-sm leading-tight">Waste Calculate</p>
+              <p className="font-bold text-lg leading-tight">Waste Calculator</p>
             </div>
           </a>
           <a href="./profile">
             <div className="bg-white rounded-lg text-[#16a34a] hover:bg-green-200 p-4 space-y-2 shadow-lg">
               <div className="">
                 <svg
-                  width="70"
-                  height="80"
+                  width="50"
+                  height="55"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
                 >
@@ -77,11 +72,11 @@ const Dashboard = () => {
             </div>
           </a>          
           <a href="./wallet">
-            <div className="bg-white rounded-lg text-[#16a34a] hover:bg-green-200  p-4 space-y-5 shadow-lg">
+            <div className="bg-white rounded-lg text-[#16a34a] hover:bg-green-200  p-4 space-y-2 shadow-lg">
               <div className="">
                 <svg
-                  width="35"
-                  height="40"
+                  width="50"
+                  height="55"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
                 >
@@ -91,15 +86,15 @@ const Dashboard = () => {
                   />
                 </svg>
               </div>
-              <p className="font-bold text-sm leading-tight">Wallet</p>
+              <p className="font-bold text-lg leading-tight">Wallet</p>
             </div>
           </a>
           <a href="./wasteinfo">
-            <div className="bg-white rounded-lg text-[#16a34a] hover:bg-green-200  p-4 space-y-5 shadow-lg">
+            <div className="bg-white rounded-lg text-[#16a34a] hover:bg-green-200  p-4 space-y-2 shadow-lg">
               <div className="">
                 <svg
-                  width="35"
-                  height="40"
+                  width="50"
+                  height="55"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
                 >
@@ -109,25 +104,16 @@ const Dashboard = () => {
                   />
                 </svg>
               </div>
-              <p className="font-bold text-sm leading-tight">Tips</p>
+              <p className="font-bold text-lg leading-tight">Tips</p>
             </div>
           </a>          
           <a href="./climate">
-            <div className="bg-white rounded-lg text-[#16a34a] hover:bg-green-200  p-2 space-y-5 shadow-lg">
+            <div className="bg-white rounded-lg text-[#16a34a] hover:bg-green-200  p-4 space-y-2 shadow-lg">
               <div className="">
-                <svg
-                  width="35"
-                  height="40"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 448 512"
-                >
-                  <path
-                    d="M349.4 44.6c5.9-13.7 1.5-29.7-10.6-38.5s-28.6-8-39.9 1.8l-256 224c-10 8.8-13.6 22.9-8.9 35.3S50.7 288 64 288H175.5L98.6 467.4c-5.9 13.7-1.5 29.7 10.6 38.5s28.6 8 39.9-1.8l256-224c10-8.8 13.6-22.9 8.9-35.3s-16.6-20.7-30-20.7H272.5L349.4 44.6z"
-                    fill="#16a34a"
-                  />
-                </svg>
+                <svg width="50"
+                  height="55" fill="#16a34a" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 16a3.5 3.5 0 01-.369-6.98 4 4 0 117.753-1.977A4.5 4.5 0 1113.5 16h-8z"></path></svg>
               </div>
-              <p className="font-bold text-sm leading-tight">Climate Update</p>
+              <p className="font-bold text-lg leading-tight">Climate Update</p>
             </div>
           </a>
         </div>

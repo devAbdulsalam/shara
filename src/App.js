@@ -1,7 +1,7 @@
 import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { Dashboard, Calculate, DesposeSent, Location, Notification, WasteInfo, Wallet, Pay, Receive, Withdraw, Profile, Welcome, Order, Home, Climate, GreenChat} from './components/Index';
-import { AgentDashboard, ANotification, AWallet} from './components/Index';
+import { Dashboard, Calculate, DesposeSent, Location, Notification, WasteInfo, Wallet, Pay, Receive, Withdraw, Profile, Welcome, Order, Home, Climate, GreenChat, AOrder} from './components/Index';
+import { AgentDashboard, ANotification, AWallet, ALocation, AOrder } from './components/Index';
 
 
 function App() {
@@ -28,6 +28,8 @@ function App() {
         <Route path="/AgentDashboard" exact element={<AgentDashboard />}></Route>
         <Route path="/anotification" exact element={<ANotification />}></Route>
         <Route path="/awallet" exact element={<AWallet />}></Route>
+        <Route path="/alocation" exact element={<ALocation />}></Route>
+        <Route path="/aorder" exact element={<AOrder />}></Route>
 			</Routes>
 	</BrowserRouter>
     </div>

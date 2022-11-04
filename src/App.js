@@ -25,7 +25,7 @@ function App() {
         <Route path="/climate" exact element={<Climate />}></Route>
         <Route path="/order" exact element={<Order />}></Route>
         <Route path="/chat" exact element={<GreenChat />}></Route>
-        <Route path="/AgentDashboard" exact element={<AgentDashboard />}></Route>
+        <Route path="/agentdashboard" exact element={<AgentDashboard />}></Route>
         <Route path="/anotification" exact element={<ANotification />}></Route>
         <Route path="/awallet" exact element={<AWallet />}></Route>
         <Route path="/alocation" exact element={<ALocation />}></Route>

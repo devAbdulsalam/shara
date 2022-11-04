@@ -35,10 +35,23 @@ const Order = () => {
             </div>
             <div className="md:block gap-2">
               <div className='mx-3'>
-                <input type="checkbox" name="selectedwastes" value="metal" onChange={handleChange}/>
-                <label htmlFor="waste1" className='text-xl p-2 mt-2'>Metal wastes</label><br />
-                <input type="checkbox" name="selectedwastes" value="plastic" onChange={handleChange}/>
-                <label htmlFor="waste2" className='text-xl p-2 mt-2'>Plastic wastes</label><br />
+                
+                <article class="feature2">
+                    <input type="checkbox" id="feature2" name="selectedwastes" value="metal" onChange={handleChange} />
+                    <div>
+                      <h5 class="text-sm font-semibold text-gray-600 dark:text-light">
+                          Metal wastes
+                        </h5>
+                    </div>
+                  </article>
+                <article class="feature2">
+                    <input type="checkbox" id="feature2" name="selectedwastes" value="metal" onChange={handleChange} />
+                    <div>
+                      <h5 class="text-sm font-semibold text-gray-600 dark:text-light">
+                          Metal wastes
+                        </h5>
+                    </div>
+                  </article>
                 <input type="checkbox" name="selectedwastes" value="general" onChange={handleChange}/>
                 <label htmlFor="waste3" className='text-xl p-2 mt-2'>General wastes</label><br />
                 <input type="checkbox" name="selectedwastes" value="organic" onChange={handleChange}/>

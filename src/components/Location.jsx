@@ -11,7 +11,7 @@ const Location = () => {
   const navigate = useNavigate()  
   const [text, setText] = useState("");
   const [order, setOrder] = useState(false)
-  const [showModal, setShowModal] = useState(false)
+  // const [showModal, setShowModal] = useState(false)
   const [selectedwastes, setSelectedWastes] = useState([]) 
     const handleChange = (event) =>{
         const selectwaste = event.target.value
@@ -33,10 +33,7 @@ const Location = () => {
   }
   const handleOrder = ()=>{
     setOrder(true);
-    }
-  const handleModal = ()=>{
-      setShowModal(true)      
-    setOrder(false);
+    console.log("OPEN ORDER")
     }
   return (
     <div>
@@ -54,7 +51,6 @@ const Location = () => {
         <div className="mx-2 my-2 font-poppins">
             <div
               className="flex justify-between rounded-full bg-white mx-1 shadow-lg"
-              onClick="openslideMenu()"
               id="menu"
             >
               <svg
@@ -134,7 +130,7 @@ const Location = () => {
                 <article class="feature2">
                     <input type="checkbox" id="feature2" name="selectedwastes" value="organic" onChange={handleChange}/>
                     <div className='flex justify-start space-x-5 px-4'>
-                      <img src={Image2} alt="mwaste" className='w-8 h-8' />
+                      <img src={Image1} alt="mwaste" className='w-8 h-8' />
                       <h5 class="text-lg font-semibold text-blue-500 dark:text-light">
                           Organic wastes
                         </h5>
@@ -162,18 +158,6 @@ const Location = () => {
                 </button>
             </div> 
         </div>
-          </div>
-          : ""
-          }
-        {showModal ?
-          <div className='bg-black bg-opacity-20 absolute w-full h-full top-0 left-0 flex place-items-center duration-500'>
-            <div className='text-center text-lg bg-green-50 w-72 p-4 mx-auto rounded-md shadow-md'>
-              <div className='text-yellow-300'>
-                <ion-icon name="happy" size="large" ></ion-icon>
-              </div>
-              <p className='p-2'>Payment sucessfull</p>
-              <button className='bg-green-500 px-8 text-white py-2 mt-2 hover:bg-green-400 rounded-md' onClick={() => navigate('/dashboard')}>Ok</button>
-            </div>
           </div>
           : ""
           }

@@ -14,4 +14,4 @@ export { default as Withdraw } from './Withdraw';
 export { default as Climate } from './Climate';
 export { default as Order } from './Order';
 export { default as GreenChat } from './GreenChat';
-export { default as Dash } from './Dashboard';
+export { default as AgentDashboard } from './AgentDashboard';

@@ -1,7 +1,6 @@
 import React from "react";
 import Logo from "../assets/logo.png";
 import TestiImage3 from "../assets/Inbox cleanup-rafiki.svg";
-import TestiImage2 from "../assets/Garbagemanagement-cuate.png";
 import TestiImage1 from "../assets/Inbox cleanup-pana.svg";
 import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";

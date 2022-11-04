@@ -1,13 +1,12 @@
 import React, {useState, useEffect, useCallback} from 'react'
-import { useNavigate, useParams } from 'react-router-dom'
+import { useNavigate} from 'react-router-dom'
 import Navbar from './Navbar'
 
-const Pay = () => {
-  const navigate = useNavigate()  
-  const {amount}  = useParams()
+const Withdraw = () => {
+  const navigate = useNavigate() 
   const [walletNumber, setWalletNumber] = useState('')
   const [walletName, setWalletName] = useState('')
-  // const [amount, setAmount] = useState('')
+  const [amount, setAmount] = useState('')
   const [confirmPin, setConfirmPin] = useState(false)
   const [showModal, setShowModal] = useState(false)
   const [confirmPayment, setConfirmPayment] = useState(false)
@@ -64,15 +63,17 @@ const Pay = () => {
               className="px-3 py-1.5 text-lg w-full font-normal text-gray-500 bg-clip-padding border-0 border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
               value={walletName} />
             <h5 className='font-semibold text-lg mt-2'>Amount</h5>          
-            <input type="number"   disabled                           
+            <input type="number"                            
               className="px-3 py-1.5 text-lg w-full font-normal text-gray-500 bg-clip-padding border-0 border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
-              value={amount}/>
+              value={amount}
+              onChange={(e) => setAmount(e.target.value)}
+              />
               <div className='mt-2'>
                 <button className="button" type='submit'>Pay</button>
               </div>
          </form>
          {confirmPayment ?
-          <div className='bg-black bg-opacity-20 absolute w-full h-full top-0 left-0 flex place-items-center duration-500'>
+          <div className='absolute w-full h-full top-0 flex place-items-center duration-500'>
             <div className='text-center text-lg bg-green-50 w-10/12 p-4 mx-auto rounded-md shadow-md'>
               <h5 className='font-semibold text-lg mt-2'>Confirm payment</h5>
               <p className='my-1 p-0'>You are about to send {amount}&#8358; to {walletName}</p>
@@ -83,7 +84,7 @@ const Pay = () => {
           : ""
           }
          {confirmPin ?
-          <div className='bg-black bg-opacity-20 absolute w-full h-full top-0 left-0 flex place-items-center duration-500'>
+          <div className='absolute w-full h-full top-0 flex place-items-center duration-500'>
             <div className='text-center text-lg bg-green-50 w-72 p-4 mx-auto rounded-md shadow-md'>
               <h5 className='font-semibold text-lg mt-2'>Input Your Pin</h5>
                <input type="number" max="4"                          
@@ -96,7 +97,7 @@ const Pay = () => {
           : ""
           }
          {showModal ?
-          <div className='bg-black bg-opacity-20 absolute w-full h-full top-0 left-0 flex place-items-center duration-500'>
+          <div className='absolute w-full h-full top-0 flex place-items-center duration-500'>
             <div className='text-center text-lg bg-green-50 w-72 p-4 mx-auto rounded-md shadow-md'>
               <div className='text-yellow-300'>
                 <ion-icon name="happy" size="large" ></ion-icon>
@@ -111,5 +112,4 @@ const Pay = () => {
     </div>
   )
 }
-
-export default Pay
+export default Withdraw

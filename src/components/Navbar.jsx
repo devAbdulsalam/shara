@@ -9,7 +9,7 @@ const Navbar = () => {
     <nav
       className={`w-full left-0 top-0 z-[999] absolute bg-gray-800 shadow-lg text-white}`}>
       <div className="flex items-center justify-between">
-        <div onClick={() => setOpen(!open)} className={`z-[999] ${open ? "text-gray-900" : "text-gray-100"} cursor-pointer text-3xl  m-5`}>
+        <div onClick={() => setOpen(!open)} className={` ${open ? "text-gray-900" : "text-gray-100"} cursor-pointer text-3xl  m-5`}>
             <ion-icon name="menu" color="#16a34a" size="large"></ion-icon>
         </div>
         <div className="mx-7">
@@ -19,6 +19,9 @@ const Navbar = () => {
         </div>
         <div  className={`text-white fixed overflow-scroll w-2/3 md:w-2/6  min-h-screen px-7 py-2 font-medium bg-gray-50 top-0 duration-300 ${open ? "left-0" : "left-[-100%]" }`}>
           <ul className="flex flex-col justify-around gap-10 py-2 text-lg">
+            <div onClick={() => setOpen(!open)} className={` ${open ? "text-gray-900" : "text-gray-100"} cursor-pointer text-3xl flex items-center justify-end`}>
+                <ion-icon name="close-outline" color="#16a34a" size="large"></ion-icon>
+            </div>
             <div className="mt-5">
               <div className="flex items-center justify-center">        
                 <img src={UserImg} alt="" className="w-14 h-14 rounded-full" />

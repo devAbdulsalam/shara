@@ -12,7 +12,7 @@ const Wallet = () => {
           <p className="mx-3 font-bold">Available Balance</p>
           <p className="text-4xl mx-3 font-extrabold my-2">&#8358; 18,420.81</p>
           <div className="mx-5 flex gap-5 space-x-2">
-            <button className="button"><a href="./pay"><i className='fa fa-send'></i> Withdraw</a></button>
+            <button className="button"><a href="./withdraw"><i className='fa fa-send'></i> Withdraw</a></button>
             <button className="button uppercase"><a href='./receive'><i className='fa fa-download'> </i> Receive </a></button>
           </div>
           <div className="space-y-5 text-sm">

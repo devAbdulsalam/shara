@@ -17,7 +17,7 @@ const Welcome = () => {
           </div>
           <div class="mr-auto place-self-center lg:col-span-7 md:text-left text-center">
             <h1 class="max-w-2xl mb-4 text-4xl font-extrabold leading-none tracking-tight md:text-5xl text-[#16a34a] xl:text-6xl dark:text-[#16a34a]">
-              A Clean, healthy and Wealthy City for All
+              A Clean, Healthy and Wealthy City for All
             </h1>
             <p className="max-w-2xl mb-6 mt-2 font-light text-gray-700 lg:mb-8 text-lg dark:text-gray-600">
               Together we can make waste removal easy and effortless, for a cleaner and better planet.

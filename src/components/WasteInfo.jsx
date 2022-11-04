@@ -38,7 +38,7 @@ const WasteInfo = () => {
                             <h5 className={`text-xl m-3 font-semibold text-${item.color} dark:text-light`}>
                             {item.name}                            
                             </h5>
-                            <i className={`p-4 w-12 fa-solid ${active === index ? "fa-plus" : "fa-minus" } group-hover:text-white text-${item.color} duration-500`}></i>
+                            <i className={`p-4 w-12 fa-solid ${active === index ? "fa-chevron-up" : "fa-chevron-down" } group-hover:text-white text-${item.color} duration-500`}></i>
                             </div>
                         </button>
                         <div className={`p-3 ${active === index ? "block" : "hidden"}`}>

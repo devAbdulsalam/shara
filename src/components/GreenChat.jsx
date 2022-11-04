@@ -80,7 +80,6 @@ const GreenChat = () => {
           <div class="md:space-x-10 space-x-3 text-green-500 text-xl">
             <i class="fa-solid fa-paper-plane cursor-pointer"></i>
             <i class="fa-solid fa-microphone-lines cursor-pointer"></i>
-            <i class="fa-solid fa-microphone-lines cursor-pointer"></i>
           </div>
         </div>
       </div>

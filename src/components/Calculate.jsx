@@ -146,8 +146,8 @@ const Calculate = () => {
                  </div>
                 </div>
                 <div className="text-yellow-600 md:block gap-2 bg-gray-200 rounded-xl">
-                  <div onClick={() => showDesc("general")} className="justify-center text-gray-50 cursor-pointer bg-gray-500 p-2 rounded-xl flex text-xl gap-2 my-2 items-center">
-                    <h2 className="font-semibold">General Waste</h2>
+                  <div onClick={() => showDesc("general")} className="justify-center text-gray-50 cursor-pointer bg-green-500 p-2 rounded-xl flex text-xl gap-2 my-2 items-center">
+                    <h2 className="font-semibold">Paper Waste</h2>
                     <span className=""> 1 KG = {generalWRate}&#8358;</span>
                   </div>
                  <div className={`${active === "general" ? "block" : "hidden"}`}>
@@ -167,8 +167,8 @@ const Calculate = () => {
                  </div>
                 </div>
                 <div className="text-red-600 md:block gap-2 bg-gray-200 rounded-xl">
-                  <div onClick={() => showDesc("material")} className="justify-center text-gray-50 cursor-pointer bg-gray-500 p-2 rounded-xl flex text-xl gap-2 my-2 items-center">
-                    <h2 className="font-semibold">Material Waste</h2>
+                  <div onClick={() => showDesc("material")} className="justify-center text-gray-50 cursor-pointer bg-green-500 p-2 rounded-xl flex text-xl gap-2 my-2 items-center">
+                    <h2 className="font-semibold">General Waste</h2>
                     <span className="">1KG = {NonRWRate}&#8358;</span>
                   </div>
                 <div className={`${active === "material" ? "block" : "hidden"}`}>
@@ -204,7 +204,7 @@ const Calculate = () => {
           </div>
         </div>
         {payment ?
-          <div className='absolute w-full h-full top-0 flex place-items-center duration-500'>
+          <div className='bg-black bg-opacity-20 absolute w-full h-full top-0 left-0 flex place-items-center duration-500'>
             <div className='text-center text-lg bg-green-50 w-11/12 p-4 mx-auto rounded-md shadow-md'>
               <h5 className='font-semibold text-2xl mt-2'>Total Waste</h5>
                <div

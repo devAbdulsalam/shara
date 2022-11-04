@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Dashboard, Calculate, DesposeSent, Location, Notification, WasteInfo, Wallet, Pay, Receive, Withdraw, Profile, Welcome, Order, Home, Climate, GreenChat} from './components/Index';
 import { AgentDashboard, ANotification, AWallet} from './components/Index';
 
+
 function App() {
   return (
     <div className="bg-green-50 min-h-screen">

@@ -1,6 +1,6 @@
 import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { Dashboard, Calculate, DesposeSent, Location, Notification, WasteInfo, Wallet, Pay, Receive, Withdraw, Profile, Welcome, Order, Home, Climate, GreenChat} from './components/Index';
+import { Dashboard, Calculate, DesposeSent, Location, Notification, WasteInfo, Wallet, Pay, Receive, Withdraw, Profile, Welcome, Order, Home, Climate, GreenChat, ALocation} from './components/Index';
 import { AgentDashboard, ANotification, AWallet} from './components/Index';
 
 
@@ -10,7 +10,7 @@ function App() {
     <BrowserRouter>
 			<Routes>
 				<Route path="/" exact element={<Welcome />}></Route>
-        <Route path="/location" exact element={<Location />}></Route>
+        <Route path="/location" element={<Location />}></Route>
         <Route path="/dashboard" exact element={<Dashboard />}></Route>
         <Route path="/profile" exact element={<Profile />}></Route>
         <Route path="/calculate" exact element={<Calculate />}></Route>
@@ -25,13 +25,10 @@ function App() {
         <Route path="/climate" exact element={<Climate />}></Route>
         <Route path="/order" exact element={<Order />}></Route>
         <Route path="/chat" exact element={<GreenChat />}></Route>
-<<<<<<< HEAD
-        <Route path="/agentdashboard" exact element={<AgentDashboard />}></Route>
-=======
         <Route path="/AgentDashboard" exact element={<AgentDashboard />}></Route>
         <Route path="/anotification" exact element={<ANotification />}></Route>
         <Route path="/awallet" exact element={<AWallet />}></Route>
->>>>>>> cb6f23c331cd987a1aa9eb7343cec589711a1eb7
+        <Route path="/alocation" exact element={<ALocation />}></Route>
 			</Routes>
 	</BrowserRouter>
     </div>

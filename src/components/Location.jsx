@@ -2,7 +2,11 @@ import React, {useState} from 'react'
 import Navbar from './Navbar'
 import { useNavigate} from 'react-router-dom'
 import Iframe from "react-iframe";
-
+import Image1 from "../assets/food.png"
+import Image2 from "../assets/garbage2.png"
+import Image3 from "../assets/waste.png"
+import Image4 from "../assets/waste2.png"
+import Image5 from "../assets/garbage3.png"
 const Location = () => {  
   const navigate = useNavigate()  
   const [text, setText] = useState("");
@@ -50,7 +54,7 @@ const Location = () => {
         <div className="mx-2 my-2 font-poppins">
             <div
               className="flex justify-between rounded-full bg-white mx-1 shadow-lg"
-              onclick="openslideMenu()"
+              onClick="openslideMenu()"
               id="menu"
             >
               <svg
@@ -100,20 +104,54 @@ const Location = () => {
             </div>
             <div className="md:block gap-2">
               <div className='mx-3'>
-                <input type="checkbox" name="selectedwastes" value="metal" onChange={handleChange}/>
-                <label htmlFor="waste1" className='text-xl p-2 mt-2 text-yellow-500'>Metal wastes</label><br />
-                <input type="checkbox" name="selectedwastes" value="plastic" onChange={handleChange}/>
-                <label htmlFor="waste2" className='text-xl p-2 mt-2 text-red-500'>Plastic wastes</label><br />
-                <input type="checkbox" name="selectedwastes" value="paper" onChange={handleChange}/>
-                <label htmlFor="waste3" className='text-xl p-2 mt-2 text-blue-500'>Paper wastes</label><br />
-                <input type="checkbox" name="selectedwastes" value="organic" onChange={handleChange}/>
-                <label htmlFor="waste4" className='text-xl p-2 mt-2 text-gray-500'>Organic wastes</label><br />
-                <input type="checkbox" name="selectedwastes" value="NRWaste" onChange={handleChange}/>
-                <label htmlFor="waste5" className='text-xl p-2 mt-2 text-green-500'>Non Recyclable wastes</label>
-                <br />
+                <article class="feature2">
+                    <input type="checkbox" id="feature2" name="selectedwastes" value="metal" onChange={handleChange} />
+                    <div className='flex justify-start space-x-5 px-4'>
+                      <img src={Image4} alt="mwaste" className='w-8 h-8' />
+                      <h5 class="text-lg font-semibold text-blue-500 dark:text-light">
+                          Metal wastes
+                        </h5>
+                    </div>
+                  </article>
+                <article class="feature2">
+                    <input type="checkbox" id="feature2" name="selectedwastes" value="plastic" onChange={handleChange}/>
+                    <div className='flex justify-start space-x-5 px-4'>
+                      <img src={Image3} alt="mwaste" className='w-8 h-8' />
+                      <h5 class="text-lg font-semibold text-blue-500 dark:text-light">
+                          Plastic wastes
+                        </h5>
+                    </div>
+                </article>
+                <article class="feature2">
+                    <input type="checkbox" id="feature2" name="selectedwastes" value="paper" onChange={handleChange}/>
+                    <div className='flex justify-start space-x-5 px-4'>
+                      <img src={Image2} alt="mwaste" className='w-8 h-8' />
+                      <h5 class="text-lg font-semibold text-blue-500 dark:text-light">
+                          Paper wastes
+                        </h5>
+                    </div>
+                </article>
+                <article class="feature2">
+                    <input type="checkbox" id="feature2" name="selectedwastes" value="organic" onChange={handleChange}/>
+                    <div className='flex justify-start space-x-5 px-4'>
+                      <img src={Image2} alt="mwaste" className='w-8 h-8' />
+                      <h5 class="text-lg font-semibold text-blue-500 dark:text-light">
+                          Organic wastes
+                        </h5>
+                    </div>
+                </article>
+                <article class="feature2">
+                    <input type="checkbox" id="feature2" name="selectedwastes" value="NRWaste" onChange={handleChange}/>
+                    <div className='flex justify-start space-x-5 px-4'>
+                      <img src={Image5} alt="mwaste" className='w-8 h-8' />
+                      <h5 class="text-lg font-semibold text-blue-500 dark:text-light">
+                          Non Recyclable wastes
+                        </h5>
+                    </div>
+                </article>
               </div>
               </div>
-              <div className="pt-5 w-full mx-auto flex justify-between">
+              <div className="pt-5 w-full mx-auto flex justify-around">
                 <a href="./dashboard">
                   <button className="bg-red-700 text-white font-bold py-2 px-8 hover:bg-red-500 rounded-md">
                     Cancle

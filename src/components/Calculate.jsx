@@ -168,6 +168,7 @@ const Calculate = () => {
                 </div>
                 <div className="text-red-600 md:block gap-2 bg-gray-200 rounded-xl">
                   <div onClick={() => showDesc("material")} className="justify-center text-gray-50 cursor-pointer bg-green-500 p-2 rounded-xl flex text-xl gap-2 my-2 items-center">
+                    <a href="https://www.flaticon.com/free-icons/plastic" title="plastic icons"></a>
                     <h2 className="font-semibold">General Waste</h2>
                     <span className="">1KG = {NonRWRate}&#8358;</span>
                   </div>

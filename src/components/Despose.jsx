@@ -1,9 +1,8 @@
-\import React, {useState} from "react";
+import React, {useState} from "react";
 import {
   plasticWRate,
   metalWRate,
-  gene
-  alWprice = Number(generalWaste) * generalWRate;
+  genealWprice = Number(generalWaste) * generalWRate;
     const OrganicWprice = Number(organicWaste) * organicWRate;
     const PlasticWprice = Number(plasticWaste) * plasticWRate;
     const MetalWprice = Number(metalWaste) * metalWRate;
@@ -86,7 +85,7 @@ import {
                 </div>
 
                 <div className="text-green-600 md:block gap-2 bg-gray-200 rounded-b-[3rem]">
-                  <div onClick={() => showDesc("organic")} className="justify-center text-gray-50 cursor-pointer bg-green-600 p-2 rounded-b-full flex text-xl gap-2 my-2 items-center">
+                  <div onClick={() => showDesc("organic")} className="justify-center text-gray-50 cursor-pointer bg-[#228e01] p-2 rounded-b-full flex text-xl gap-2 my-2 items-center">
                     <h2 className="font-semibold">Organic Waste</h2>
                     <span className="">1KG = {organicWRate}$</span>
                   </div>

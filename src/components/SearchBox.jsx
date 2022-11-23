@@ -2,11 +2,10 @@ import React, {useState} from 'react'
 import limage from "../assets/placeholder.png"
 
 const SearchBox = (props) =>{
-  const { setSelectPosition} = props;
-  const [searchText, setSearchText] = useState("");
+  const { setSelectPosition, selectPosition} = props;
+  const [searchText, setSearchText] = useState(selectPosition.display_name);
   const [listPlace, setListPlace] = useState([]);
   const [locations, setLocations] = useState(false);
-
   const handleOrder = ()=>{
     fetch(`https://nominatim.openstreetmap.org/search?format=json&limit=5&q=${searchText}`)
     .then((response) => response.text())
@@ -73,7 +72,6 @@ const SearchBox = (props) =>{
                 autoComplete="text"
                 value={searchText}
                 onChange={(e) => setSearchText(e.target.value)}
-                onFocus={()=> {setLocations(true)}}
                 className="border text-gray-700 font-bold border-transparent bg-transparent block w-full placeholder:text-gray-600 placeholder:text-sm focus:outline-transparent focus:border-transparent"
                 type="text"
                 id="search_input"

@@ -1,5 +1,4 @@
-import React, {useState, useEffect } from "react";
-import useGeoLocation from './useGeoLocation'
+import React, { useEffect } from "react";
 import { MapContainer, Marker, Popup, TileLayer, useMap } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import L from "leaflet";
@@ -10,6 +9,7 @@ const icon = L.icon({
   iconSize: [38, 38],
   iconAnchor: [25, 16],
 });
+const position = [11.8948389, 8.5364136];
 
 function ResetCenterView(props) {
   const { selectPosition } = props;
@@ -31,22 +31,11 @@ function ResetCenterView(props) {
 }
 
 const Map = (props) => {
-  const location = useGeoLocation();
   const { selectPosition, setOrder} = props;
-  const [locationSelection, setLocationSelection] = useState([selectPosition?.lat, selectPosition?.lon]); 
-
-    useEffect(() => {
-    if (location.loaded && !location.error) {
-      setLocationSelection([location.coordinates.lat, location.coordinates.lng])
-      console.log("location found")
-    }else{
-      console.log("location not found")
-    }
-  }, [location]); 
-    console.log(locationSelection)
+  const locationSelection = [selectPosition?.lat, selectPosition?.lon]; 
   return (
     <MapContainer
-      center={selectPosition}
+      center={position}
       zoom={16}
       // zoomControl={false}
       style={{ width: "100%", height: "100%" }}

@@ -1,4 +1,5 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
+import useGeoLocation from './useGeoLocation'
 import Navbar from './Navbar'
 import { useNavigate} from 'react-router-dom'
 import Maps from "./Map";        
@@ -13,6 +14,7 @@ import Image5 from "../assets/garbage3.png"
 // https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbFViOFNNaThJM3I5aWJ5UUE5aGhxQmU1Q205QXxBQ3Jtc0ttS3JDTVMySDFBajRjTjV5OFE5NnlFZjBBdmMzMWp4WlhyNEVwblF2RkpGa1huMEpFaWpkaFBxcXVjSFBabndVWWhkVFRNd2UweDdNUkJ3dnRpUFZTTWRqU3RJSkdIYl9yYTJ4T2ZXVTBod0U2a1pGcw&q=https%3A%2F%2Fgithub.com%2Fwebstylepress&v=fKzctFQkkbc
 
 const Location = () => {  
+  const location = useGeoLocation();
   const navigate = useNavigate()  
   const [order, setOrder] = useState(false)
   const [selectPosition, setSelectPosition] = useState(null);
@@ -33,6 +35,19 @@ const Location = () => {
         navigate("/desposesent");
     }
 
+    useEffect(() => {
+        if (location.loaded && !location.error) {
+          const lat = location.coordinates.lat
+          const lon = location.coordinates.lng
+          let display_name
+          fetch(`http://api.openweathermap.org/geo/1.0/reverse?lat=${lat}&lon=${lon}&limit=1&appid=062183c9cb6dd20fe2ce2ea4f552730d`)
+          .then((response) => response.json())
+          .then((data) => {
+            (display_name = `${data[0].name}, ${data[0].state}`)
+            setSelectPosition({lat, lon, display_name})
+          })
+        }
+      }, [location]); 
   return (
     <div className='h-screen w-full relative'>
       <Navbar />

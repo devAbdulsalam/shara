@@ -70,8 +70,8 @@ const toggleAlert = () =>{
       </header>
       <section className="p-5 py-8 w-full">
           <div className="flex items-center justify-center space-x-5 w-full mt-20">
-              <button className={`font-semibold text-3xl rounded-full p-3 shadow-xl bg-gray-100 justify-center flex flex-col  ${showSignUp ? 'border-b-4 border-green-600 text-green-600' : "text-green-700"}`} onClick={handleSignUp}>  <ion-icon name="log-in-outline"></ion-icon></button>
-              <button className={`font-semibold text-3xl rounded-full p-3 shadow-xl bg-gray-100 justify-center flex flex-col ${showLogin ? 'border-b-4  border-green-600 text-green-600' : "text-green-700"}`} onClick={handleLogin}><ion-icon name="person-add-outline"></ion-icon></button>
+              <button className={`font-semibold text-3xl rounded-full p-3 shadow-xl bg-gray-100 justify-center flex flex-col  ${showSignUp ? 'border-b-4 border-green-600 text-green-600' : "text-green-700"}`} onClick={handleSignUp}><ion-icon name="person-add-outline"></ion-icon></button>
+              <button className={`font-semibold text-3xl rounded-full p-3 shadow-xl bg-gray-100 justify-center flex flex-col ${showLogin ? 'border-b-4  border-green-600 text-green-600' : "text-green-700"}`} onClick={handleLogin}><ion-icon name="log-in-outline"></ion-icon></button>
           </div>
           {showSignUp ?
           <div className="max-w-[320px] mx-auto py-4">

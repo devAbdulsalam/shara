@@ -17,7 +17,7 @@ const SearchBox = (props) =>{
       })
       .catch((err) => {
         // console.log("err: ", err)
-        console("Network error");
+        console.log("Network error");
       });
       }
   return (

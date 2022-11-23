@@ -49,7 +49,7 @@ const Map = (props) => {
           <Popup>
             {
             <div>
-            <p>{selectPosition.display_name}</p>
+            <p className="p-1">{selectPosition.display_name}</p>
             <button onClick={()=> setOrder(true)} className="text-lg bg-green-500 px-2 rounded-md">Enter</button>
             </div>
             }

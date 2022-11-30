@@ -33,7 +33,21 @@ const toggleAlert = () =>{
       toggleAlert()
       setShowSignUp(true)
     }else{
-      navigate('/dashboard')
+      const user = {name, phone, password}
+      const url = "localhost:5000/register"
+      fetch(url, {
+        method: "POST",
+        crossDomain : true,
+        headers: {
+          "content-type" : "application/json",
+          Accept : "application/json",
+        },
+        body : JSON.stringify(user)
+
+      }).then((response) => (response).json())
+      .then((data) => console.log(data))
+      .catch((err) => console.log(err))
+      // navigate('/dashboard')
     }
   };
   const handleLoginSubmit = (e) => {
